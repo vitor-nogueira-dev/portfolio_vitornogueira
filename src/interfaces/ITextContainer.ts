@@ -1,4 +1,6 @@
-export interface ITextContainer {
+import { Variants } from "framer-motion";
+
+export interface ITextContainer extends Variants {
     hidden: {
         opacity: number;
     };

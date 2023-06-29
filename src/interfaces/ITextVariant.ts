@@ -1,4 +1,6 @@
-export interface ITextVariant {
+import { Variants } from "framer-motion";
+
+export interface ITextVariant extends Variants {
     hidden: {
         opacity: number;
         y: number;
