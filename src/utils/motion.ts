@@ -1,4 +1,9 @@
-export const navVariants = {
+import { IFooterVariant } from "@/interfaces/IFooterVariants";
+import { INavVariant } from "@/interfaces/INavVariant";
+import { ITextContainer } from "@/interfaces/ITextContainer";
+import { ITextVariant } from "@/interfaces/ITextVariant";
+
+export const navVariants: INavVariant = {
   hidden: {
     opacity: 0,
     y: -50,
@@ -67,7 +72,7 @@ export const textVariant = (delay: number) => ({
   },
 });
 
-export const textContainer = {
+export const textContainer: ITextContainer = {
   hidden: {
     opacity: 0,
   },
@@ -77,7 +82,7 @@ export const textContainer = {
   }),
 };
 
-export const textVariant2 = {
+export const textVariant2: ITextVariant = {
   hidden: {
     opacity: 0,
     y: 20,
@@ -149,7 +154,7 @@ export const zoomIn = (delay: number, duration: number) => ({
   },
 });
 
-export const footerVariants = {
+export const footerVariants: IFooterVariant = {
   hidden: {
     opacity: 0,
     y: 50,
