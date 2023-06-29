@@ -3,6 +3,7 @@ import { motion, HTMLMotionProps, Variants } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
 import Image from 'next/image';
 import { ProjectCardProps } from '@/interfaces/IProjectCardProps';
+import { StackCard } from './StackCard';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
     id,
@@ -12,6 +13,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     index,
     active,
     handleClick,
+    stacks,
     isLgScreen,
     repositorio,
     deploy,
@@ -37,27 +39,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {title}
                 </h3>
             ) : (
-                <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] lg:bg-[rgba(0,0,0,0.7)] rounded-b-[24px] boxShadow">
-                    <div className="w-full flex">
-                        {/* stacks */}
+                <div className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)]  rounded-b-[24px] boxShadow h-[80%] lg:h-[40%]">
+                    <div className="w-full flex justify-start">
+                        {stacks?.map((stack, index) => (
+                            <StackCard stack={stack} key={index} />
+                        ))}
                     </div>
-                    <a
-                        href={repositorio}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-normal text-[16px] leading-[20.16px] text-white pb-2 hover:text-[#aeaeae]"
-                    >
-                        📁 Repositório
-                    </a>
-                    <a
-                        href={deploy}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-normal text-[16px] leading-[20.16px] text-white hover:text-[#aeaeae]"
-                    >
-                        💻 Deploy
-                    </a>
-                    <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
+                    <span>
+                        <a
+                            href={repositorio}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-normal text-[16px] leading-[20.16px] text-white pb-2 hover:text-[#aeaeae]"
+                        >
+                            📁 Repositório
+                        </a>
+                    </span>
+                    <span>
+                        <a
+                            href={deploy}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-normal text-[16px] leading-[20.16px] text-white hover:text-[#aeaeae] "
+                        >
+                            💻 Deploy
+                        </a>
+                    </span>
+                    <h2 className=" mt-2 font-semibold sm:text-[22px] text-[24px] text-white">
                         {title}
                     </h2>
                 </div>
