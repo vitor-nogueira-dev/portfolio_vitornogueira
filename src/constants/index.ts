@@ -1,4 +1,11 @@
-export const exploreWorlds = [
+import { IFeedback } from "@/interfaces/IFeedback";
+import { IHardSkill } from "@/interfaces/IHardSkill";
+import { IProject } from "@/interfaces/IProject";
+import { IRedesSociais } from "@/interfaces/IRedesSoiais";
+import { ISoftSkill } from "@/interfaces/ISoftSkill";
+import { IWorkExperience } from "@/interfaces/IWorkExperience";
+
+export const projects: IProject[] = [
   {
     id: 'netflix',
     mobUrl: '/mobNetflix.png',
@@ -71,7 +78,7 @@ export const exploreWorlds = [
 ];
 
 
-export const softSkills = [
+export const softSkills: ISoftSkill[] = [
   {
     title: 'Habilidade em Resolver Problemas',
     subtitle:
@@ -110,7 +117,7 @@ export const softSkills = [
   },
 ];
 
-export const experiencies = [
+export const wordExperience: IWorkExperience[] = [
   {
     imgUrl: '/cake.png',
     title: 'Doces da Hora',
@@ -144,7 +151,7 @@ export const experiencies = [
   },
 ];
 
-export const socials = [
+export const socials: IRedesSociais[] = [
   {
     name: 'linkedin',
     url: '/linkedin.svg',
@@ -162,7 +169,7 @@ export const socials = [
   },
 ];
 
-export const stacks = [
+export const hardSkills: IHardSkill[] = [
   {
     name: 'HTML',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
@@ -282,16 +289,6 @@ export const stacks = [
     content:
       'Framework de teste JavaScript executado no Node.js e no navegador.',
   },
-  // {
-  //   name: 'Chai',
-  //   url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chai/chai-original.svg',
-  //   content: 'Biblioteca de asserção para testes em JavaScript.',
-  // },
-  // {
-  //   name: 'Sinon',
-  //   url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sinonjs/sinonjs-original.svg',
-  //   content: 'Biblioteca de testes em JavaScript que fornece recursos de criação de espiões, stubs e mocks.',
-  // },
   {
     name: 'Jest',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
@@ -306,22 +303,22 @@ export const stacks = [
   },
 ];
 
-export const feedbacks = [
+export const feedbacks: IFeedback[] = [
   {
     name: 'Pablo',
-    cargo: 'Developer Front-end',
+    post: 'Developer Front-end',
     content:
       'Vitor é extremamente dedicado ao seu comprometimento em todos os aspectos!!! Uma pessoa tranquila, sincera com quem consegui o início de uma amizade, do qual desejo que continue crescendo e torna-se enorme. E digo sem medo, que não seja somente no âmbito estudantil e profissional.Escrevo isso porque no dia a dia Trybe de estudo, é sensacional demais ver o crescimento rápido de aprendizado desenvolvimento web dele e ele também estar sempre disposto a ajudar e ensinar o próximo. Desenvolver projetos sempre com algo a mais, sempre dando dicas sobre caso a caso. Sempre que pode está me ajudando 😉. Vitor no momento é um Front-end Jr exemplo, com foco em virar um desenvovedor Full-Stack de primeira linha!!',
   },
   {
     name: 'José Alves',
-    cargo: 'Developer Back-end',
+    post: 'Developer Back-end',
     content:
       'Estou extremamente impressionado com a capacidade e determinação de Vitor na área de tecnologia. Apesar de ter começado do zero, ele conseguiu adquirir, em poucos meses, um notável nível de conhecimento e profissionalismo em suas atividades. Além disso, é admirável como ele se dedica e mantém focado em seus objetivos, mostrando-se um profissional altamente talentoso e dedicado. Vitor trabalha muito bem em equipe, contribuindo para um ambiente de trabalho colaborativo e produtivo. Além disso, ele possui uma excelente didática, tornando-se capaz de transmitir seus conhecimentos de forma clara e compreensível para todos os membros da equipe. Com essas habilidades adicionais, tenho certeza de que o Vitor seria um grande trunfo para qualquer equipe de trabalho. Portanto, recomendo fortemente o Vitor para qualquer empresa que busque um colaborador com alto potencial e comprometimento.',
   },
   {
     name: 'Wallace Ferreia',
-    cargo: 'Developer Back-end',
+    post: 'Developer Back-end',
     content:
       'Recomendo Vitor Nogueira para qualquer oportunidade na área de desenvolvimento de software. Ele é um desenvolvedor dedicado e está sempre em busca de aprimorar suas habilidades técnicas e interpessoais. Vitor tem uma abordagem criativa para resolver problemas complexos e é capaz de trabalhar bem em equipe. Além disso, ele é um comunicador claro e eficaz, capaz de explicar conceitos técnicos de forma clara e concisa. Estou confiante de que Vitor será um ativo valioso para qualquer equipe de desenvolvimento e recomendo-o sem hesitação.',
   },
