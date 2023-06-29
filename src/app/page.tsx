@@ -1,16 +1,19 @@
 'use client'
 
 import Navbar from '@/components/NavBar'
+import Hero from '@/sections/Hero'
 
-export default function Home() {
+import React from 'react'
+
+import '@/app/global.css'
+
+function Home() {
   return (
     <div className="bg-primary-black overflow-hidden">
-      <header>
-        <Navbar />
-      </header>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-      </main>
+      <Navbar />
+      <Hero />
     </div>
   )
 }
+
+export default Home
