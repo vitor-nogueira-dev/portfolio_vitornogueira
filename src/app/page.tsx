@@ -2,9 +2,8 @@
 
 import React from 'react'
 
-import Navbar from '@/components/NavBar'
-import Hero from '@/sections/Hero'
-import About from '@/sections/About'
+import { Hero, About, Projects } from '@/sections'
+import { Navbar } from '@/components'
 
 import '@/app/global.css'
 
@@ -16,6 +15,7 @@ function Home() {
       <div className="relative">
         <About />
         <div className="gradient-03 z-0" />
+        <Projects />
       </div>
     </div>
   )
