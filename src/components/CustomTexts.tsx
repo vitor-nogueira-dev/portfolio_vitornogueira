@@ -24,7 +24,7 @@ const TitleText: React.FC<TitleTextProps> = ({ title, textStyles }) => (
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
-    className={`mt-8 md:mt-4 lg:mt-2 font-bold lg:text-4xl text-xl sm:text-2xl text-white border-2 w-[75%] text-center ${textStyles} m-auto`}
+    className={`mt-8 md:mt-4 lg:mt-2 font-bold lg:text-4xl text-xl sm:text-2xl text-white w-[75%] text-center ${textStyles} m-auto`}
   >
     {title}
   </motion.h2>
