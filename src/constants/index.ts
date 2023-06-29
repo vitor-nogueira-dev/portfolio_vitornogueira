@@ -12,9 +12,10 @@ export const projects: IProject[] = [
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
     stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
     ],
     repositorio: 'https://github.com/vitor-nogueira-dev/netflix',
     deploy: 'https://netflix-vn.netlify.app/',
