@@ -3,7 +3,7 @@ import styles from '../styles';
 import { IStackCardProps } from '@/interfaces/IStackCardProps';
 import Image from 'next/image';
 
-export const StackCard: React.FC<IStackCardProps> = ({ stack }) => (
+const StackCard: React.FC<IStackCardProps> = ({ stack }) => (
   <div
     className={`${styles.flexCenter} w-[50px] h-[50px] rounded-[24px] glassmorphism mb-[16px] m-1 lg:w-[60px] lg:h-[40px]`}
   >
@@ -16,3 +16,5 @@ export const StackCard: React.FC<IStackCardProps> = ({ stack }) => (
     />
   </div>
 );
+
+export default StackCard;

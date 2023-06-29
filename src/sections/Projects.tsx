@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-import { TitleText, TypingText } from '@/components';
-import ProjectCard from '@/components/ProjectCard';
+import { TitleText, TypingText, ProjectCard } from '@/components';
 
 import { projects } from '@/constants';
 import { staggerContainer } from '@/utils/motion';

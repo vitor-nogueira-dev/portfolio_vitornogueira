@@ -3,7 +3,7 @@ import { motion, HTMLMotionProps, Variants } from 'framer-motion';
 import { fadeIn } from '@/utils/motion';
 import Image from 'next/image';
 import { ProjectCardProps } from '@/interfaces/IProjectCardProps';
-import { StackCard } from './StackCard';
+import StackCard from './StackCard';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
     id,
