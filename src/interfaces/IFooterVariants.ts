@@ -1,4 +1,6 @@
-export interface IFooterVariant {
+import { Variants } from "framer-motion";
+
+export interface IFooterVariant extends Variants {
     hidden: {
         opacity: number;
         y: number;
