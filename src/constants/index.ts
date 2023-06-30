@@ -1,5 +1,5 @@
 import { IFeedback } from "@/interfaces/IFeedback";
-import { IHardSkill } from "@/interfaces/IHardSkill";
+import { IHardSkillsCardProps } from "@/interfaces/IHardSkillsCardProps";
 import { IProject } from "@/interfaces/IProject";
 import { IRedesSociais } from "@/interfaces/IRedesSoiais";
 import { ISoftSkill } from "@/interfaces/ISoftSkill";
@@ -170,7 +170,7 @@ export const socials: IRedesSociais[] = [
   },
 ];
 
-export const hardSkills: IHardSkill[] = [
+export const hardSkills: IHardSkillsCardProps[] = [
   {
     name: 'HTML',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
