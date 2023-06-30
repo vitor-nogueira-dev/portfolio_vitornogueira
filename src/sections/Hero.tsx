@@ -2,45 +2,47 @@
 
 import { motion } from 'framer-motion';
 
-import styles from '@/styles/index';
+import styles from '@/styles';
 
-import { slideIn, staggerContainer, textVariant } from '@/utils/motion';
+import { fadeIn, slideIn, staggerContainer, textVariant } from '@/utils/motion';
 import TypingEffect from '@/components/Typical';
 
 import Image from 'next/image';
 import React from 'react';
+import { ButtonComponent } from '@/components';
 
 const Hero: React.FC = () => (
-    <section className={`${styles.yPaddings} sm:pl-16 pl-6 mt-24`} id="inicio">
-        <motion.div
-            variants={staggerContainer(0.2, 0.1)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-            className={`${styles.innerWidth} mx-auto flex flex-col`}
-        >
-            <div className="flex justify-center items-center flex-col relative z-10 h-20">
-                <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-                    Vitor Nogueira
-                    {/* <TypingEffect /> */}
+    <section className={`${styles.yPaddings} mt-16 flex items-center border justify-center flex-col `} id="inicio">
+        <div className=" flex w-full justify-center flex-wrap items-center py-24 lg:gap-2 first-letter:gap-6">
+            <div className="pt-4 flex lg:items-start md:items-start items-center flex-col p-2 rounded-tl-[20px] z-10 rounded-bl-[20px] gap-2">
+                <motion.h1 variants={textVariant(1.1)} className={'font-bold  text-[40px] leading-[50px] text-[#ffffff]'}>
+                    Olá, eu sou o <br />
+                    <span>Vitor Nogueira!!</span> <br />
+                    <span className='text-[16px] text-[#ffffff]'>
+                        Desenvolvedor, <br />
+                        <TypingEffect text="Full Stack com ênfase em Front-end" time={5000} />
+                    </span>
                 </motion.h1>
-
+                <div className="flex gap-2 ">
+                    <ButtonComponent content="dowload cv" />
+                    <ButtonComponent content="contato" />
+                </div>
             </div>
+            <Image
+                src="/profile-color.png"
+                alt="photo profile color"
+                className="sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative rounded-bl-[140px] pl-4 pt-4 pb-4 "
+                width={500}
+                height={500}
+            />
 
-            <motion.div
-                variants={slideIn('right', 'tween', 0.2, 1)}
-                className="relative w-full md:-mt-[20px] -mt-[12px] bg-"
-            >
-                <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px] bg-slate-600" />
-                <Image
-                    src="/profile-color.png"
-                    alt="photo profile color"
-                    className="w-50 sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative rounded-bl-[140px]"
-                    width={500}
-                    height={500}
-                />
-            </motion.div>
-        </motion.div>
+        </div>
+        <motion.img
+            variants={fadeIn('up', 'tween', 0.3, 1)}
+            src="/arrow-down.svg"
+            alt="arrow down"
+            className="w-[18px] h-[28px] object-contain mt-[28px] arrow-animation"
+        />
     </section>
 );
 
