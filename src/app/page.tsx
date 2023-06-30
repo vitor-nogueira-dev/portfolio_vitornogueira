@@ -2,10 +2,12 @@
 
 import React from 'react'
 
-import { Hero, About, Projects } from '@/sections'
+import { Hero, About, Projects, HardSkills } from '@/sections'
 import { Navbar } from '@/components'
 
+import 'rsuite/dist/rsuite.min.css';
 import '@/app/global.css'
+
 
 function Home() {
   return (
@@ -17,6 +19,10 @@ function Home() {
         <div className="gradient-03 z-0" />
         <Projects />
       </div>
+      <div className="relative">
+      <HardSkills />
+      <div className="gradient-04 z-0" />
+    </div>
     </div>
   )
 }
