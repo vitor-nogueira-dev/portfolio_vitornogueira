@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import HardSkillsCard from "./HardSkillsCard";
 import SoftSkillsCard from "./SoftSkillsCard";
 import RedesSociaisCard from "./RedesSociaisCard";
+import ButtonComponent from "./Button";
 
 export {
     Navbar,
@@ -14,5 +15,6 @@ export {
     ProjectCard,
     HardSkillsCard,
     SoftSkillsCard,
-    RedesSociaisCard
+    RedesSociaisCard,
+    ButtonComponent
 };
