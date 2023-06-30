@@ -92,10 +92,12 @@ export const textVariant2: ITextVariant = {
     y: 0,
     transition: {
       type: 'tween',
-      ease: 'easeIn',
+      ease: 'easeInOut',
+      duration: 0.5,
     },
   },
 };
+
 
 export const fadeIn = (
   direction: 'left' | 'right' | 'up' | 'down',
