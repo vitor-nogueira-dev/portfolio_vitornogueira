@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { footerVariants } from '@/utils/motion';
 import { socials } from '@/constants';
 
-import RedesSociaisCard from '@/components/RedesSociaisCard';
+import { RedesSociaisCard } from '@/components';
 import styles from '@/styles';
 
 const Footer: React.FC = () => (
@@ -16,7 +16,7 @@ const Footer: React.FC = () => (
         initial="hidden"
         whileInView="show"
         className={`${styles.xPaddings} py-8 relative`}
-    > 
+    >
         <div className="footer-gradient" />
         <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
             <div className="flex items-center justify-center flex-wrap gap-3">
