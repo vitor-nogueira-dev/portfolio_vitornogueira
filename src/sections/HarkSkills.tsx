@@ -2,10 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { TitleText, TypingText } from '@/components';
+import { TitleText, TypingText, HardSkillsCard } from '@/components';
 import { staggerContainer, fadeIn } from '@/utils/motion';
 
 import styles from '@/styles';
+import { hardSkills } from '@/constants';
 
 const HardSkills: React.FC = () => (
     <section className={`${styles.paddings} relative z-10`} id="skills">
@@ -16,15 +17,16 @@ const HardSkills: React.FC = () => (
             viewport={{ once: false, amount: 0.25 }}
             className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8 border-[0.5px] rounded-[30px] p-6 border-[#7d7b7bd0]`}
         >
-
             <motion.div
                 variants={fadeIn('left', 'tween', 0.2, 1)}
                 className="flex-[10] flex justify-center flex-col items-center"
             >
                 <TypingText title="| Conhecimentos" />
                 <TitleText title="Estruturando o Sucesso: Minhas Habilidades Técnicas em Ação" textStyles="text-center w-75" />
-                <div className="mt-[31px] flex flex-wrap gap-[20px] justify-center items-center max-w-[700px]">
-                    {/* stacks */}
+                <div className="mt-[31px] flex flex-wrap gap-[20px] justify-center items-center max-w-[700px] ">
+                    {hardSkills.map((skill, index) => (
+                        <HardSkillsCard key={index} name={skill.name} url={skill.url} content={skill.content} />
+                    ))}
                 </div>
             </motion.div>
         </motion.div>
