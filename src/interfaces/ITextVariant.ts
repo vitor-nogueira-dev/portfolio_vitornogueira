@@ -11,6 +11,7 @@ export interface ITextVariant extends Variants {
         transition: {
             type: string;
             ease: string;
+            duration: number;
         };
     };
 }
