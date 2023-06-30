@@ -7,10 +7,11 @@ import React from 'react';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 
 import styles from '@/styles/index';
+import { TabsComponent } from '@/components';
 
 const About: React.FC = () => (
     <section className={`${styles.paddings} relative z-10`} id="sobre">
-        <div className="gradient-02 z-0" />
+        <div className="gradient-01 z-0" />
         <motion.div
             variants={staggerContainer(0.1, 0.2)}
             initial="hidden"
@@ -26,12 +27,14 @@ const About: React.FC = () => (
             >
                 <span className="font-extrabold text-white">Seja bem-vindo(a)</span> ao meu portfólio !!!
             </motion.p>
-
+            <div>
+                <TabsComponent />
+            </div>
             <motion.img
                 variants={fadeIn('up', 'tween', 0.3, 1)}
                 src="/arrow-down.svg"
                 alt="arrow down"
-                className="w-[18px] h-[28px] object-contain mt-[28px] arrow-animation"
+                className="w-[18px] h-[28px] object-contain arrow-animation"
             />
         </motion.div>
     </section>
