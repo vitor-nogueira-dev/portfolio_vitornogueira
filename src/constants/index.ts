@@ -1,4 +1,4 @@
-import { IFeedback } from "@/interfaces/IFeedback";
+import { ITab } from "@/interfaces/ITab";
 import { IHardSkillsCardProps } from "@/interfaces/IHardSkillsCardProps";
 import { IProject } from "@/interfaces/IProject";
 import { IRedesSociais } from "@/interfaces/IRedesSoiais";
@@ -304,23 +304,36 @@ export const hardSkills: IHardSkillsCardProps[] = [
   },
 ];
 
-export const feedbacks: IFeedback[] = [
+export const tabsAbout: ITab[] = [
   {
-    name: 'Pablo',
-    post: 'Developer Front-end',
-    content:
-      'Vitor é extremamente dedicado ao seu comprometimento em todos os aspectos!!! Uma pessoa tranquila, sincera com quem consegui o início de uma amizade, do qual desejo que continue crescendo e torna-se enorme. E digo sem medo, que não seja somente no âmbito estudantil e profissional.Escrevo isso porque no dia a dia Trybe de estudo, é sensacional demais ver o crescimento rápido de aprendizado desenvolvimento web dele e ele também estar sempre disposto a ajudar e ensinar o próximo. Desenvolver projetos sempre com algo a mais, sempre dando dicas sobre caso a caso. Sempre que pode está me ajudando 😉. Vitor no momento é um Front-end Jr exemplo, com foco em virar um desenvovedor Full-Stack de primeira linha!!',
+    eventKey: 'about',
+    title: 'Sobre mim',
+    content: ` Como desenvolvedor full stack com ênfase em front-end, trago uma trajetória de dedicação e curiosidade na área de tecnologia. Trabalhar desde os 12 anos despertou em mim uma grande vontade de alcançar meus objetivos, e ao longo dos anos desenvolvi uma mentalidade empreendedora e um forte foco em resultados.\n\n
+
+    Me formei no curso de cozinheiro pelo Senac, onde pude adquirir habilidades valiosas em gestão de pessoas, liderança, trabalho em equipe, resiliência e capacidade de resolver problemas. Essas experiências moldaram minha trajetória e me trouxeram importantes aprendizados.\n\n
+    
+    Com o passar do tempo, minha paixão pela tecnologia ganhou espaço, e mergulhei de cabeça no desenvolvimento full stack, com foco especial em front-end. Adquiri habilidades sólidas em HTML, CSS, JavaScript e Typescript, além de frameworks como React, que me permitem criar experiências incríveis na web e interfaces de usuário intuitivas.\n\n
+    
+    A mescla dessas experiências no setor alimentício com minha busca incessante pelo aprimoramento técnico me tornaram um profissional completo. Tenho uma abordagem empreendedora, onde assumo a responsabilidade como se fosse o dono do negócio, e aplico minhas habilidades de gestão e resolução de problemas para entregar resultados de qualidade.\n\n
+    
+    Estou entusiasmado para aplicar todo o conhecimento adquirido ao longo dos anos em projetos inovadores na área de tecnologia. Sou resiliente diante dos desafios e estou sempre buscando aprender e crescer como profissional. Estou pronto para colaborar com equipes talentosas e fazer a diferença no campo da tecnologia, criando soluções incríveis e impactantes.`,
   },
   {
-    name: 'José Alves',
-    post: 'Developer Back-end',
-    content:
-      'Estou extremamente impressionado com a capacidade e determinação de Vitor na área de tecnologia. Apesar de ter começado do zero, ele conseguiu adquirir, em poucos meses, um notável nível de conhecimento e profissionalismo em suas atividades. Além disso, é admirável como ele se dedica e mantém focado em seus objetivos, mostrando-se um profissional altamente talentoso e dedicado. Vitor trabalha muito bem em equipe, contribuindo para um ambiente de trabalho colaborativo e produtivo. Além disso, ele possui uma excelente didática, tornando-se capaz de transmitir seus conhecimentos de forma clara e compreensível para todos os membros da equipe. Com essas habilidades adicionais, tenho certeza de que o Vitor seria um grande trunfo para qualquer equipe de trabalho. Portanto, recomendo fortemente o Vitor para qualquer empresa que busque um colaborador com alto potencial e comprometimento.',
+    eventKey: 'frontend',
+    title: 'Front-end',
+    content: `No campo do desenvolvimento front-end, possuo uma ampla gama de conhecimentos e habilidades para criar interfaces de usuário modernas e responsivas. Sou especializado em tecnologias como ReactJS, TypeScript e JavaScript, que são a base do desenvolvimento front-end atual.\n\n
+
+    Tenho experiência no uso de bibliotecas e frameworks populares, como Redux, para gerenciamento de estado eficiente e escalável. Também estou familiarizado com ferramentas de teste, como Jest e React Testing Library, para garantir a qualidade do código por meio de testes automatizados abrangentes, tanto em nível unitário quanto de integração.\n\n
+    
+    Além disso, possuo habilidades sólidas em estilização de componentes, utilizando frameworks como Tailwind CSS, Material UI, Bootstrap e Styled Components. Tenho domínio de HTML e CSS, permitindo-me criar interfaces bem estruturadas e visualmente atraentes.\n\n
+    
+    Minha experiência em desenvolvimento front-end abrange desde a criação de interfaces de usuário dinâmicas até a implementação de práticas modernas de desenvolvimento, como componentização, padrões de design e arquitetura escalável.`,
   },
   {
-    name: 'Wallace Ferreia',
-    post: 'Developer Back-end',
-    content:
-      'Recomendo Vitor Nogueira para qualquer oportunidade na área de desenvolvimento de software. Ele é um desenvolvedor dedicado e está sempre em busca de aprimorar suas habilidades técnicas e interpessoais. Vitor tem uma abordagem criativa para resolver problemas complexos e é capaz de trabalhar bem em equipe. Além disso, ele é um comunicador claro e eficaz, capaz de explicar conceitos técnicos de forma clara e concisa. Estou confiante de que Vitor será um ativo valioso para qualquer equipe de desenvolvimento e recomendo-o sem hesitação.',
+    eventKey: 'backend',
+    title: 'Back-end',
+    content: `No campo do desenvolvimento back-end, possuo ampla experiência em tecnologias como Node.js, Express e Docker, que utilizo para criar APIs RESTful robustas. Tenho sólidos conhecimentos em API RESTful e sou habilidoso na criação de endpoints eficientes e seguros. Além disso, trabalhei com bancos de dados SQL, como MySQL, e estou familiarizado com o uso do Sequelize como ORM para interagir com eles.\n\n
+
+    Também tenho experiência em testes automatizados no back-end, utilizando ferramentas como Mocha, Chai e Sinon. Sou proficiente em testes unitários e de integração, o que me permite garantir a qualidade e a robustez do código. Além disso, possuo conhecimentos em práticas de programação orientada a objetos (POO) e utilizo o Docker para criar ambientes eficientes de desenvolvimento e produção.`,
   },
 ];
