@@ -1,13 +1,12 @@
 'use client'
-
 import React from 'react'
 
 import { Hero, About, Projects, HardSkills, SoftSkills, Footer } from '@/sections'
 import { Navbar } from '@/components'
 
 import 'rsuite/dist/rsuite.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/app/global.css'
-
 
 function Home() {
   return (
@@ -27,8 +26,8 @@ function Home() {
       </div>
       <div className="relative">
         <Footer />
-      <div className="gradient-04 z-0" />
-    </div>
+        <div className="gradient-04 z-0" />
+      </div>
     </div>
   )
 }
