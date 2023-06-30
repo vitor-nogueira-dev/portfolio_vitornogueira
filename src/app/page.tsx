@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { Hero, About, Projects, HardSkills, SoftSkills } from '@/sections'
+import { Hero, About, Projects, HardSkills, SoftSkills, Footer } from '@/sections'
 import { Navbar } from '@/components'
 
 import 'rsuite/dist/rsuite.min.css';
@@ -24,6 +24,10 @@ function Home() {
         <div className="gradient-04 z-0" />
         <SoftSkills />
       </div>
+      <div className="relative">
+        <Footer />
+      <div className="gradient-04 z-0" />
+    </div>
     </div>
   )
 }
