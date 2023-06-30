@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from '@/styles';
 
-import { fadeIn, slideIn, staggerContainer, textVariant } from '@/utils/motion';
+import { fadeIn, textVariant } from '@/utils/motion';
 import TypingEffect from '@/components/Typical';
 
 import Image from 'next/image';
