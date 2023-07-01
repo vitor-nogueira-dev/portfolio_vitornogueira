@@ -7,7 +7,7 @@ import SoftSkillsCard from "./SoftSkillsCard";
 import RedesSociaisCard from "./RedesSociaisCard";
 import ButtonComponent from "./Button";
 import TabsComponent from "./TabsComponent";
-import ModalComponent from "./Modal";
+import ModalComponent from "./ModalComponent";
 
 export {
     Navbar,
