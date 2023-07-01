@@ -31,6 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 src={isLgScreen ? mobUrl : deskUrl}
                 alt="planet-04"
                 className={`${active !== id ? 'opacity-60' : ''} absolute w-full h-full object-cover rounded-[24px]`}
+                unoptimized={true}
                 width={337}
                 height={400}
             />
@@ -39,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     {title}
                 </h3>
             ) : (
-                <div className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)]  rounded-b-[24px] boxShadow h-[80%] lg:h-[40%]">
+                <div className="absolute bottom-0 p-4 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)]  rounded-[24px] boxShadow h-[100%] lg:h-[40%]">
                     <div className="w-full flex justify-start">
                         {stacks?.map((stack, index) => (
                             <StackCard stack={stack} key={index} />
@@ -50,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={repositorio}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-normal text-[16px] leading-[20.16px] text-white pb-2 hover:text-[#aeaeae]"
+                            className="font-medium text-[16px] leading-[20.16px] text-link-projects"
                         >
                             📁 Repositório
                         </a>
@@ -60,7 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={deploy}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-normal text-[16px] leading-[20.16px] text-white hover:text-[#aeaeae] "
+                            className="font-normal text-[16px] leading-[20.16px] text-link-projects"
                         >
                             💻 Deploy
                         </a>
