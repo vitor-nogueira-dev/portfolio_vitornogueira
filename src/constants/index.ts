@@ -93,13 +93,13 @@ export const softSkills: ISoftSkill[] = [
     imgUrl: '/networking.png',
   },
   {
-    title: 'Atenção aos Detalhes para Interfaces Bem Elaboradas',
+    title: 'Atenção aos Detalhes',
     subtitle:
       'Tenho um olhar minucioso para garantir que as interfaces sejam visualmente atraentes e funcionais.',
     imgUrl: '/loupe.png',
   },
   {
-    title: 'Orientado(a) a Processos e Resultados',
+    title: 'Orientado a Processos e Resultados',
     subtitle:
       'Sigo metodologias e boas práticas para entregar projetos bem-sucedidos dentro do prazo e do orçamento.',
     imgUrl: '/bar-chart.png',
@@ -111,7 +111,7 @@ export const softSkills: ISoftSkill[] = [
     imgUrl: '/idea.png',
   },
   {
-    title: 'Flexibilidade e Adaptação a Diferentes Tecnologias e Requisitos',
+    title: 'Flexibilidade e Adaptação',
     subtitle:
       'Sou capaz de me adaptar a novas tecnologias e requisitos, buscando sempre aprender e evoluir.',
     imgUrl: '/mobile.png',
