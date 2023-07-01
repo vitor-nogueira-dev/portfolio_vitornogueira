@@ -349,6 +349,22 @@ section {
   font-weight: bold;
 }
 
+.modal-content {
+  background-color: #1a1a1a !important;
+  border-radius: 0.8rem;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 0px 7px;
+  padding: 1rem;
+  color: #cbcbcb;
+}
+
+.modal-content .modal-header  {
+  border: none;
+}
+
+.modal-content .modal-footer, .modal-body {
+  border-top: 1px solid #777777;
+}
+
 @media (max-width: 1024px) {
   .nav-tabs {
     margin: 0;
