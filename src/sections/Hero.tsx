@@ -1,5 +1,6 @@
 'use client';
-
+import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import styles from '@/styles';
@@ -7,12 +8,10 @@ import styles from '@/styles';
 import { fadeIn, textVariant } from '@/utils/motion';
 import TypingEffect from '@/components/Typical';
 
-import Image from 'next/image';
-import React from 'react';
 import { ButtonComponent } from '@/components';
 
 const Hero: React.FC = () => (
-    <section className={`${styles.yPaddings} mt-16 flex items-center border justify-center flex-col `} id="inicio">
+    <section className={` mt-16 flex items-center border justify-center flex-col `} id="inicio">
         <div className=" flex w-full justify-center flex-wrap items-center py-24 lg:gap-2 first-letter:gap-6">
             <div className="pt-4 flex lg:items-start md:items-start items-center flex-col p-2 rounded-tl-[20px] z-10 rounded-bl-[20px] gap-2">
                 <motion.h1 variants={textVariant(1.1)} className={'font-bold  text-[40px] leading-[50px] text-[#ffffff]'}>
