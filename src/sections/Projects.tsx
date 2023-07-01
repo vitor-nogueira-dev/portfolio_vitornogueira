@@ -1,31 +1,30 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { TitleText, TypingText, ProjectCard } from '@/components';
 
-import { projects } from '@/constants';
+import { projectsFrontend } from '@/constants';
 import { staggerContainer } from '@/utils/motion';
 
 import styles from '@/styles';
+import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
 const Projects: React.FC = () => {
-    const [active, setActive] = useState<string>('world-2');
-    const [isLgScreen, setIsLgScreen] = useState<boolean>(false);
+    const [activeTab, setActiveTab] = useState('frontend');
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsLgScreen(window.innerWidth >= 1024);
-        };
+    const handleTabChange = (tab: any): void => {
+        setActiveTab(tab);
+    };
 
-        if (typeof window !== 'undefined') {
-            setIsLgScreen(window.innerWidth >= 1024);
-            window.addEventListener('resize', handleResize);
-
-            return () => {
-                window.removeEventListener('resize', handleResize);
-            };
-        }
-    }, []);
+    const renderProjects = () =>
+        (activeTab === 'frontend' ? projectsFrontend : [])
+            .map((project, index) => (
+                <ProjectCard
+                    key={index}
+                    title={project.title}
+                    stacks={project.stacks}
+                />
+            ));
 
     return (
         <section className='sm:p-16 xs:p-8 px-6 py-12 mt-24 border' id="projetos" >
@@ -38,23 +37,36 @@ const Projects: React.FC = () => {
             >
                 <TypingText title="| Desenvolvendo Soluções Criativas" textStyles="text-center" />
                 <TitleText title="Projetos" textStyles="text-center" />
-                <div className="mt-[20px] flex lg:flex-row flex-col gap-5  sm:h-[700px] md:h-[780px] lg:h-[520px] h-[780px]">
-                    {projects.map((world, index) => (
-                        <ProjectCard
-                            key={world.id}
-                            {...world}
-                            id={world.id}
-                            mobUrl={world.mobUrl}
-                            deskUrl={world.deskUrl}
-                            title={world.title}
-                            index={index}
-                            active={active}
-                            handleClick={setActive}
-                            isLgScreen={isLgScreen}
-                            repositorio={world.repositorio}
-                            deploy={world.deploy}
-                        />
-                    ))}
+                <div>
+                    <Tabs
+                        id="uncontrolled-tab-example"
+                        className="flex items-center justify-center w-full border"
+                        activeKey={activeTab}
+                        onSelect={(tab) => handleTabChange(tab)}
+                    >
+                        <Tab
+                            eventKey="frontend"
+                            title={<span className="btn">Front-end</span>}
+                            className="text-white border"
+                        >
+                            <Container>
+                                <Row className="border justify-content-center flex-wrap">
+                                    {renderProjects()}
+                                </Row>
+                            </Container>
+                        </Tab>
+                        <Tab
+                            eventKey="backend"
+                            title={<span className="btn">Back-end</span>}
+                            className="text-white"
+                        >
+                            <Container>
+                                <Row className="border justify-content-center flex-wrap">
+                                    {renderProjects()}
+                                </Row>
+                            </Container>
+                        </Tab>
+                    </Tabs>
                 </div>
             </motion.div>
         </section>
