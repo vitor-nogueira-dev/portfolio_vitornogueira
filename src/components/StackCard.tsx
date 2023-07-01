@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const StackCard: React.FC<IStackCardProps> = ({ stack }) => (
   <div
-    className={`${styles.flexCenter} w-[50px] h-[50px] rounded-[24px] glassmorphism mb-[16px] m-1 lg:w-[60px] lg:h-[40px]`}
+    className={`${styles.flexCenter} w-[50px] h-[50px] rounded-[24px] glassmorphism mb-[16px] m-1`}
   >
     <Image
       src={stack}
