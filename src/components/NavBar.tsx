@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 const navigation = [
-    { name: 'Inicio', href: '#inicio', current: false },
+    { name: 'Inicio', href: '#inicio', current: true },
     { name: 'Sobre', href: '#sobre', current: false },
     { name: 'Projetos', href: '#projetos', current: false },
     { name: 'Skills', href: '#skills', current: false },
@@ -17,6 +17,8 @@ function classNames(...classes: string[]): string {
 }
 
 const Navbar: React.FC = () => {
+    const heroSectionRef = useRef<HTMLDivElement>(null);
+
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
@@ -36,8 +38,14 @@ const Navbar: React.FC = () => {
         };
     }, [prevScrollPos]);
 
+    const scrollToHeroSection = () => {
+        if (heroSectionRef.current) {
+            heroSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <nav className={`bg-gray-800 w-full z-50 fixed ${visible ? 'block' : 'hidden'}`}>
+        <nav ref={heroSectionRef} className={`bg-gray-800 w-full z-50 fixed ${visible ? 'block' : 'hidden'}`}>
             <Disclosure as="div" className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 {({ open }) => (
                     <>
@@ -78,6 +86,8 @@ const Navbar: React.FC = () => {
                                                     href={item.href}
                                                     className="px-2 py-2 text-sm font-medium btn text-decoration-none"
                                                     aria-current={item.current ? 'page' : undefined}
+                                                    onClick={item.name === 'Inicio' ? scrollToHeroSection : undefined}
+
                                                 >
                                                     {item.name}
                                                 </a>
