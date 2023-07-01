@@ -4,18 +4,17 @@ import React from 'react'
 import { Hero, About, Projects, HardSkills, SoftSkills, Footer } from '@/sections'
 import { Navbar } from '@/components'
 
-import 'rsuite/dist/rsuite.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '@/app/global.css'
+import 'rsuite/dist/rsuite.min.css';
+import '@/app/global.css';
 
 function Home() {
   return (
     <div className="bg-primary-black overflow-hidden">
       <Navbar />
-      <div className="gradient-04 z-0" />
       <Hero />
       <div className="relative">
-        <About />
+        <About /> 
         <div className="gradient-03 z-0" />
         <Projects />
       </div>
