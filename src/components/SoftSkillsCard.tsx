@@ -6,7 +6,7 @@ import { ISoftSkillsCardProps } from '@/interfaces/ISoftSkillsCardProps';
 import styles from '../styles';
 
 const SoftSkillsCard: React.FC<ISoftSkillsCardProps> = ({ imgUrl, title, subtitle }) => (
-    <div className="cardSoftSkillsExterno lg:w-[210px] lg:h-[350px] w-[213px] h-[290px]">
+    <div className="cardSoftSkillsExterno lg:w-[210px] lg:h-[350px] w-[213px] h-[290px] border border-solid border-white border-tl border-br"  >
         <div className='cardSoftSkillsInterno 2 p-4 flex flex-col justify-between items-center lg:w-[210px] lg:h-[350px] w-[213px] h-[290px]'>
             <div
                 className={`${styles.flexCenter} w-[50px] h-[50px] rounded-[24px] glassmorphism lg:w-[70px] lg:h-[70px]`}
@@ -19,7 +19,7 @@ const SoftSkillsCard: React.FC<ISoftSkillsCardProps> = ({ imgUrl, title, subtitl
                     height={50}
                 />
             </div>
-            <h1 className="mt-[15px] font-bold text-[14px] lg:text-[16px] leading-[25px] text-white text-center">
+            <h1 className="mt-[15px] font-bold text-[14px] lg:text-[16px] leading-[25px] text-white text-center border">
                 {title}
             </h1>
             <p className="flex-1 mt-[16px] font-normal text-[14px] lg:text-[16px] text-[#B0B0B0] leading-[25px] text-center">
