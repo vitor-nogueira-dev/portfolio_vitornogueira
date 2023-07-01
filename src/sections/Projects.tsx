@@ -23,11 +23,12 @@ const Projects: React.FC = () => {
                     key={index}
                     title={project.title}
                     stacks={project.stacks}
+                    mobUrl={project.mobUrl}
                 />
             ));
 
     return (
-        <section className='sm:p-16 xs:p-8 px-6 py-12 mt-24 border' id="projetos" >
+        <section className='sm:p-16 xs:p-8 px-6' id="projetos" >
             <motion.div
                 variants={staggerContainer(0.1, 0.1)}
                 initial="hidden"
@@ -40,17 +41,17 @@ const Projects: React.FC = () => {
                 <div>
                     <Tabs
                         id="uncontrolled-tab-example"
-                        className="flex items-center justify-center w-full border"
+                        className="flex items-center justify-center w-full "
                         activeKey={activeTab}
                         onSelect={(tab) => handleTabChange(tab)}
                     >
                         <Tab
                             eventKey="frontend"
                             title={<span className="btn">Front-end</span>}
-                            className="text-white border"
+                            className="text-white"
                         >
                             <Container>
-                                <Row className="border justify-content-center flex-wrap">
+                                <Row className=" justify-content-center flex-wrap">
                                     {renderProjects()}
                                 </Row>
                             </Container>
@@ -61,7 +62,7 @@ const Projects: React.FC = () => {
                             className="text-white"
                         >
                             <Container>
-                                <Row className="border justify-content-center flex-wrap">
+                                <Row className=" justify-content-center flex-wrap">
                                     {renderProjects()}
                                 </Row>
                             </Container>
