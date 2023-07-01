@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 const navigation = [
-    { name: 'Inicio', href: '#inicio', current: true },
+    { name: 'Inicio', href: '#inicio', current: false },
     { name: 'Sobre', href: '#sobre', current: false },
     { name: 'Projetos', href: '#projetos', current: false },
     { name: 'Skills', href: '#skills', current: false },
@@ -76,10 +76,7 @@ const Navbar: React.FC = () => {
                                                 <a
                                                     key={item.name}
                                                     href={item.href}
-                                                    className={classNames(
-                                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                                        'rounded-md px-3 py-2 text-sm font-medium',
-                                                    )}
+                                                    className="px-2 py-2 text-sm font-medium btn text-decoration-none"
                                                     aria-current={item.current ? 'page' : undefined}
                                                 >
                                                     {item.name}
@@ -91,16 +88,13 @@ const Navbar: React.FC = () => {
                             </div>
                         </div>
                         <Disclosure.Panel className="sm:hidden">
-                            <div className="space-y-1 px-2 pb-3 pt-2">
+                            <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center">
                                 {navigation.map((item) => (
                                     <Disclosure.Button
                                         key={item.name}
                                         as="a"
                                         href={item.href}
-                                        className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                            'block rounded-md px-3 py-2 text-base font-medium',
-                                        )}
+                                        className="block px-2 py-2 text-sm font-medium btn text-decoration-none w-[60%]"
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
