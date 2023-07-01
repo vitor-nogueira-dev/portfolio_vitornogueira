@@ -301,6 +301,54 @@ section {
   text-decoration: none;
 }
 
+.card-project {
+  width: 301px;
+  height: 153px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  border: 2px solid #3c3c3c;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-bottom: 20px !important;
+}
+
+.card-project-details {
+  color: #cbcbcb;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-project-button {
+  transform: translate(-50%, 125%);
+  width: 90%;
+  color: #424242;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.card-project:hover {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(137deg, #7e03aa 50%, #00ff75 80%, #3700ff 100%)
+    1;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-project:hover .card-project-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 @media (max-width: 1024px) {
   .nav-tabs {
     margin: 0;
