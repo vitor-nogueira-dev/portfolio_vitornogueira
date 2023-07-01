@@ -8,6 +8,7 @@ import { IWorkExperience } from "@/interfaces/IWorkExperience";
 export const projectsFrontend: IProject[] = [
   {
     id: 'netflix',
+    mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
     stacks: [
@@ -21,6 +22,7 @@ export const projectsFrontend: IProject[] = [
   },
   {
     id: 'fitclub',
+    mobUrl: '/mobFitClub.png',
     deskUrl: '/deskFitClub.png',
     title: 'FitClub',
     stacks: [
@@ -34,6 +36,7 @@ export const projectsFrontend: IProject[] = [
   },
   {
     id: 'weekaway',
+    mobUrl: '/mobWeekAway.png',
     deskUrl: '/deskWeekAway.png',
     title: 'WeekAway',
     stacks: [
@@ -47,6 +50,7 @@ export const projectsFrontend: IProject[] = [
   },
   {
     id: 'Wallet',
+    mobUrl: '/mobWallet.png',
     deskUrl: '/deskWallet.png',
     title: 'Wallet',
     stacks: [
@@ -60,6 +64,7 @@ export const projectsFrontend: IProject[] = [
   },
   {
     id: 'Tunes',
+    mobUrl: '/mobTunes.png',
     deskUrl: '/deskTunes.png',
     title: 'Tunes',
     stacks: [
