@@ -5,10 +5,9 @@ import { IRedesSociais } from "@/interfaces/IRedesSoiais";
 import { ISoftSkill } from "@/interfaces/ISoftSkill";
 import { IWorkExperience } from "@/interfaces/IWorkExperience";
 
-export const projects: IProject[] = [
+export const projectsFrontend: IProject[] = [
   {
     id: 'netflix',
-    mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
     stacks: [
@@ -22,7 +21,6 @@ export const projects: IProject[] = [
   },
   {
     id: 'fitclub',
-    mobUrl: '/mobFitClub.png',
     deskUrl: '/deskFitClub.png',
     title: 'FitClub',
     stacks: [
@@ -36,7 +34,6 @@ export const projects: IProject[] = [
   },
   {
     id: 'weekaway',
-    mobUrl: '/mobWeekAway.png',
     deskUrl: '/deskWeekAway.png',
     title: 'WeekAway',
     stacks: [
@@ -50,7 +47,6 @@ export const projects: IProject[] = [
   },
   {
     id: 'Wallet',
-    mobUrl: '/mobWallet.png',
     deskUrl: '/deskWallet.png',
     title: 'Wallet',
     stacks: [
@@ -64,7 +60,6 @@ export const projects: IProject[] = [
   },
   {
     id: 'Tunes',
-    mobUrl: '/mobTunes.png',
     deskUrl: '/deskTunes.png',
     title: 'Tunes',
     stacks: [
@@ -93,7 +88,7 @@ export const softSkills: ISoftSkill[] = [
     imgUrl: '/networking.png',
   },
   {
-    title: 'Atenção aos Detalhes',
+    title: 'Design Cuidadoso e Detalhado',
     subtitle:
       'Tenho um olhar minucioso para garantir que as interfaces sejam visualmente atraentes e funcionais.',
     imgUrl: '/loupe.png',
@@ -105,13 +100,13 @@ export const softSkills: ISoftSkill[] = [
     imgUrl: '/bar-chart.png',
   },
   {
-    title: 'Pensamento Criativo para Soluções Inovadoras',
+    title: 'Pensamento Criativo e Soluções Inovadoras',
     subtitle:
       'Busco constantemente maneiras criativas e inovadoras de abordar problemas e encontrar soluções.',
     imgUrl: '/idea.png',
   },
   {
-    title: 'Flexibilidade e Adaptação',
+    title: 'Curiosidade e Aprendizado Contínuo',
     subtitle:
       'Sou capaz de me adaptar a novas tecnologias e requisitos, buscando sempre aprender e evoluir.',
     imgUrl: '/mobile.png',
