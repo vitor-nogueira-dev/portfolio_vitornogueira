@@ -1,7 +1,8 @@
+import React from 'react';
+import Image from 'next/image';
 
 import { IMyVerticallyCenteredModalProps } from '@/interfaces/IMyVerticallyCenteredModalProps ';
-import Image from 'next/image';
-import React from 'react';
+
 import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
