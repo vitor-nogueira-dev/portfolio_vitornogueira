@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 
-import { Hero, About, Projects, HardSkills, SoftSkills, Footer } from '@/sections'
+import { Hero, About, Projects, HardSkills, SoftSkills, Footer, Contact } from '@/sections'
 import { Navbar } from '@/components'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +14,7 @@ function Home() {
       <Navbar />
       <Hero />
       <div className="relative">
-        <About /> 
+        <About />
         <div className="gradient-03 z-0" />
         <Projects />
       </div>
@@ -24,8 +24,9 @@ function Home() {
         <SoftSkills />
       </div>
       <div className="relative">
-        <Footer />
+        <Contact />
         <div className="gradient-04 z-0" />
+        <Footer />
       </div>
     </div>
   )
