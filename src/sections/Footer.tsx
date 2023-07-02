@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { footerVariants } from '@/utils/motion';
 import { socials } from '@/constants';
 
-import { RedesSociaisCard } from '@/components';
+import { RedesSociaisCard, RiskDiv } from '@/components';
 import styles from '@/styles';
 
 const Footer: React.FC = () => (
@@ -20,7 +20,7 @@ const Footer: React.FC = () => (
         <div className="footer-gradient" />
         <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
             <div className="flex flex-col">
-                <div className="mb-[10px] h-[2px] bg-white opacity-10" />
+                <RiskDiv />
                 <div className="flex items-center justify-evenly gap-4 z-10">
                     <Image
                         src="/vn1.png"
