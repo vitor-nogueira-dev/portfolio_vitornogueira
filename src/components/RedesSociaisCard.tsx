@@ -5,7 +5,7 @@ import { IRedesSociaisCardProps } from "@/interfaces/IRedesSociaisCardProps"
 
 const RedesSociaisCard: React.FC<IRedesSociaisCardProps> = ({ link, name, url }) => {
     return (
-        <a href={link} key={name} target="_blank" rel="noopener noreferrer" className="cursos-pointer">
+        <a href={link} key={name} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
             <Image
                 src={url}
                 alt={name}
