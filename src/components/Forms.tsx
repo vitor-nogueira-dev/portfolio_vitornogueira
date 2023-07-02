@@ -1,7 +1,9 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import emailJs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 import "@/styles/forms.style.css";
+import { fadeIn } from "@/utils/motion";
 
 const Forms: React.FC = () => {
     const [name, setName] = useState("");
@@ -10,8 +12,6 @@ const Forms: React.FC = () => {
     const [isLoading, setLoading] = useState(false);
     const [showMessage, setShowMessage] = useState(false);
     const [progress, setProgress] = useState(100);
-
-    const nameInputRef = useRef<HTMLInputElement>(null);
 
     const handleNameChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target;
@@ -85,14 +85,10 @@ const Forms: React.FC = () => {
         return emailRegex.test(email);
     };
 
-    useEffect(() => {
-        if (nameInputRef.current) {
-            nameInputRef.current.focus();
-        }
-    }, []);
-
     return (
-        <div className="form-container z-2">
+        <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="form-container z-2">
             <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Qual seu nome?</label>
@@ -103,7 +99,6 @@ const Forms: React.FC = () => {
                         required
                         value={name}
                         onChange={handleNameChange}
-                        ref={nameInputRef}
                     />
                 </div>
                 <div className="form-group">
@@ -149,7 +144,7 @@ const Forms: React.FC = () => {
                     </div>
                 )}
             </form>
-        </div>
+        </motion.div>
     );
 };
 
