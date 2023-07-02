@@ -8,6 +8,7 @@ import RedesSociaisCard from "./RedesSociaisCard";
 import ButtonComponent from "./Button";
 import TabsComponent from "./TabsComponent";
 import ModalComponent from "./ModalComponent";
+import Forms from "./Forms";
 
 export {
     Navbar,
@@ -20,5 +21,6 @@ export {
     RedesSociaisCard,
     ButtonComponent,
     TabsComponent,
-    ModalComponent
+    ModalComponent,
+    Forms
 };
