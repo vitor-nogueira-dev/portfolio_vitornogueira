@@ -311,6 +311,7 @@ section {
   transition: 0.5s ease-out;
   overflow: visible;
   margin-bottom: 20px !important;
+  cursor: pointer;
 }
 
 .card-project-details {
