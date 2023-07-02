@@ -10,7 +10,7 @@ const HardSkillsCard: React.FC<IHardSkillsCardProps> = ({ name, url, content }) 
     <div className={`${styles.flexCenter} flex-row`}>
         <ButtonToolbar>
             <Whisper placement="bottom" controlId="control-id-hover" trigger="hover" speaker={
-                <Tooltip>
+                <Tooltip style={{ width: '200px', marginLeft: '10px' }}>
                     {content}
                 </Tooltip>
             }>
