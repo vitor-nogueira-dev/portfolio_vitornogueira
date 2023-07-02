@@ -9,6 +9,7 @@ import ButtonComponent from "./Button";
 import TabsComponent from "./TabsComponent";
 import ModalComponent from "./ModalComponent";
 import Forms from "./Forms";
+import RiskDiv from "./Risk";
 
 export {
     Navbar,
@@ -22,5 +23,6 @@ export {
     ButtonComponent,
     TabsComponent,
     ModalComponent,
-    Forms
+    Forms,
+    RiskDiv
 };
