@@ -1,13 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
 import { TitleText, TypingText, ProjectCard } from '@/components';
-
 import { projectsFrontend } from '@/constants';
 import { staggerContainer } from '@/utils/motion';
-
-import styles from '@/styles';
-import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
 const Projects: React.FC = () => {
     const [activeTab, setActiveTab] = useState('frontend');
@@ -16,16 +13,15 @@ const Projects: React.FC = () => {
         setActiveTab(tab);
     };
 
-    const renderProjects = () =>
-        (activeTab === 'frontend' ? projectsFrontend : [])
-            .map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    title={project.title}
-                    stacks={project.stacks}
-                    mobUrl={project.mobUrl}
-                />
-            ));
+    const renderProjects = (projects: any[]) =>
+        projects.map((project, index) => (
+            <ProjectCard
+                key={index}
+                title={project.title}
+                stacks={project.stacks}
+                mobUrl={project.mobUrl}
+            />
+        ));
 
     return (
         <section className='sm:p-16 xs:p-8 px-6' id="projetos" >
@@ -34,14 +30,14 @@ const Projects: React.FC = () => {
                 initial="hidden"
                 animate="show"
                 viewport={{ once: false, amount: 0.25 }}
-                className={`${styles.innerWidth} mx-auto flex flex-col`}
+                className="mx-auto flex flex-col"
             >
                 <TypingText title="| Desenvolvendo Soluções Criativas" textStyles="text-center" />
                 <TitleText title="Projetos" textStyles="text-center" />
                 <div>
                     <Tabs
                         id="uncontrolled-tab-example"
-                        className="flex items-center justify-center w-full "
+                        className="flex items-center justify-center w-full"
                         activeKey={activeTab}
                         onSelect={(tab) => handleTabChange(tab)}
                     >
@@ -51,8 +47,8 @@ const Projects: React.FC = () => {
                             className="text-white"
                         >
                             <Container>
-                                <Row className=" justify-content-center flex-wrap">
-                                    {renderProjects()}
+                                <Row className="justify-content-center flex-wrap">
+                                    {renderProjects(projectsFrontend)}
                                 </Row>
                             </Container>
                         </Tab>
@@ -62,8 +58,9 @@ const Projects: React.FC = () => {
                             className="text-white"
                         >
                             <Container>
-                                <Row className=" justify-content-center flex-wrap">
-                                    {renderProjects()}
+                                <Row className="justify-content-center flex-wrap">
+                                    {renderProjects([])}
+                                    back-end
                                 </Row>
                             </Container>
                         </Tab>
