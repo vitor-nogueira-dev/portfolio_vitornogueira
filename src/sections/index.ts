@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import HardSkills from "./HarkSkills";
 import SoftSkills from "./SoftSkills";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 export {
     About,
@@ -12,4 +13,5 @@ export {
     HardSkills,
     SoftSkills,
     Footer,
+    Contact
 };
