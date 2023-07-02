@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
-import { TitleText, TypingText, ProjectCard } from '@/components';
+import { TitleText, TypingText, ProjectCard, RiskDiv } from '@/components';
 import { projectsFrontend } from '@/constants';
 import { staggerContainer } from '@/utils/motion';
 
@@ -32,8 +32,9 @@ const Projects: React.FC = () => {
                 viewport={{ once: false, amount: 0.25 }}
                 className="mx-auto flex flex-col"
             >
-                <TypingText title="| Desenvolvendo Soluções Criativas" textStyles="text-center" />
-                <TitleText title="Projetos" textStyles="text-center" />
+                <RiskDiv />
+                <TypingText title="| Desenvolvendo Soluções Criativas" />
+                <TitleText title="Projetos" textStyles='m-auto' />
                 <div>
                     <Tabs
                         id="uncontrolled-tab-example"
