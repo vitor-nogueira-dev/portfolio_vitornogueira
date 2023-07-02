@@ -217,7 +217,8 @@ section {
   transition: clip-path 500ms;
 }
 
-.btn:where(:hover, :focus)::after {
+.btn:where(:hover, :focus)::after,
+.btn.active::after {
   clip-path: polygon(
     calc(100% - var(--border-width))
       calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
@@ -272,19 +273,26 @@ section {
 
 .nav-tabs .nav-link.active {
   background: transparent;
+  box-shadow: none;
   border: 1px solid #777777;
+  border-bottom: none;
+}
+
+.nav-link .nav-link {
+  border: none;
 }
 
 .nav-tabs .nav-link:hover {
   transform: scale(1.03);
   transition: all 0.2s ease-in-out;
-  border: 1px solid #ffffff;
+  border: 1px solid #777777;
   border-bottom: none;
 }
 
 .nav-tabs {
   margin: 20px;
-  border-bottom: 1px solid #777777;
+  border-bottom: 0.5px solid #777777;
+  padding-top: 20px;
 }
 
 .nav-tabs .nav-link {
@@ -355,12 +363,18 @@ section {
   color: #cbcbcb;
 }
 
-.modal-content .modal-header  {
+.modal-content .modal-header {
   border: none;
 }
 
-.modal-content .modal-footer, .modal-body {
+.modal-content .modal-footer,
+.modal-body {
   border-top: 1px solid #777777;
+}
+
+a:hover {
+  transform: scale(1.08);
+  transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 1024px) {
@@ -370,5 +384,8 @@ section {
   .nav-tabs .nav-link {
     margin-left: 0;
     margin-right: 0;
+  }
+  .btn {
+    font-size: 15px;
   }
 }
