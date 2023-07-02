@@ -9,13 +9,13 @@ import styles from '@/styles';
 import { hardSkills } from '@/constants';
 
 const HardSkills: React.FC = () => (
-    <section className={`${styles.paddings} relative z-10`} id="skills">
+    <div className={`${styles.paddings} relative z-10 mb-4 mx-16`} id="skills">
         <motion.div
             variants={staggerContainer(0.1, 0.2)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
-            className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8 border-[0.5px] rounded-[30px] p-6 border-[#7d7b7bd0]`}
+            className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
         >
             <motion.div
                 variants={fadeIn('left', 'tween', 0.2, 1)}
@@ -30,7 +30,7 @@ const HardSkills: React.FC = () => (
                 </div>
             </motion.div>
         </motion.div>
-    </section>
+    </div>
 );
 
 export default HardSkills;
