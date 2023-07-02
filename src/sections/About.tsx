@@ -7,11 +7,12 @@ import React from 'react';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 
 import styles from '@/styles/index';
-import { TabsComponent } from '@/components';
+import { RiskDiv, TabsComponent } from '@/components';
 
 const About: React.FC = () => (
     <section className={`${styles.paddings} relative z-10`} id="sobre">
         <div className="gradient-01 z-0" />
+        <RiskDiv />
         <motion.div
             variants={staggerContainer(0.1, 0.2)}
             initial="hidden"

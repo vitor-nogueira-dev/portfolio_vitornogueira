@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 
-import { TitleText, TypingText } from '@/components';
+import { RiskDiv, TitleText, TypingText } from '@/components';
 import { staggerContainer, fadeIn } from '@/utils/motion';
 
 import styles from '@/styles';
@@ -19,6 +19,7 @@ const SoftSkills: React.FC = () => (
             viewport={{ once: false, amount: 0.25 }}
             className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
         >
+            <RiskDiv />
             <motion.div
                 variants={fadeIn('right', 'tween', 0.2, 1)}
                 className="flex-[0.95] flex justify-center flex-col items-center"
