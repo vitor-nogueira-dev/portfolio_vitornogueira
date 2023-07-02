@@ -8,12 +8,12 @@ import styles from '@/styles';
 import { fadeIn, textVariant } from '@/utils/motion';
 import TypingEffect from '@/components/Typical';
 
-import { ButtonComponent } from '@/components';
+import { ButtonComponent, RiskDiv } from '@/components';
 
 const Hero: React.FC = () => (
-    <section className={` mt-16 flex items-center border justify-center flex-col `} id="inicio">
-        <div className=" flex w-full justify-center flex-wrap items-center py-24 lg:gap-2 first-letter:gap-6">
-            <div className="pt-4 flex lg:items-start md:items-start items-center flex-col p-2 rounded-tl-[20px] z-10 rounded-bl-[20px] gap-2">
+    <section className={` mt-16 flex items-center justify-center flex-col `} id="inicio">
+        <div className=" flex w-full justify-center flex-wrap items-center py-2 lg:gap-2 first-letter:gap-6">
+            <div className="pt-1 flex lg:items-start md:items-start items-center flex-col rounded-tl-[20px] z-10 rounded-bl-[20px] gap-2">
                 <motion.h1 variants={textVariant(1.1)} className={'font-bold  text-[40px] leading-[50px] text-[#ffffff]'}>
                     Olá, eu sou o <br />
                     <span>Vitor Nogueira!!</span> <br />
@@ -40,7 +40,7 @@ const Hero: React.FC = () => (
             variants={fadeIn('up', 'tween', 0.3, 1)}
             src="/arrow-down.svg"
             alt="arrow down"
-            className="w-[18px] h-[28px] object-contain mt-[28px] arrow-animation"
+            className="w-[18px] h-[28px] object-contain mt-[14px] mb-10 arrow-animation"
         />
     </section>
 );
