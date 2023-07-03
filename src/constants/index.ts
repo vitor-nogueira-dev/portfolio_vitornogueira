@@ -1,17 +1,17 @@
 import { ITab } from "@/interfaces/ITab";
 import { IHardSkillsCardProps } from "@/interfaces/IHardSkillsCardProps";
-import { IProjectFrontend } from "@/interfaces/IProjectFrontend";
 import { IRedesSociais } from "@/interfaces/IRedesSoiais";
 import { ISoftSkill } from "@/interfaces/ISoftSkill";
 import { IWorkExperience } from "@/interfaces/IWorkExperience";
-import { IProjectBackend } from "@/interfaces/IProjectBackend";
+import { IProject } from "@/interfaces/IProject";
 
-export const projectsFrontend: IProjectFrontend[] = [
+export const projectsFrontend: IProject[] = [
   {
     id: 'netflix',
     mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -26,6 +26,7 @@ export const projectsFrontend: IProjectFrontend[] = [
     mobUrl: '/mobFitClub.png',
     deskUrl: '/deskFitClub.png',
     title: 'FitClub',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
@@ -40,6 +41,7 @@ export const projectsFrontend: IProjectFrontend[] = [
     mobUrl: '/mobWeekAway.png',
     deskUrl: '/deskWeekAway.png',
     title: 'WeekAway',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
@@ -54,6 +56,7 @@ export const projectsFrontend: IProjectFrontend[] = [
     mobUrl: '/mobWallet.png',
     deskUrl: '/deskWallet.png',
     title: 'Wallet',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -68,6 +71,7 @@ export const projectsFrontend: IProjectFrontend[] = [
     mobUrl: '/mobTunes.png',
     deskUrl: '/deskTunes.png',
     title: 'Tunes',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
@@ -79,11 +83,12 @@ export const projectsFrontend: IProjectFrontend[] = [
   },
 ];
 
-export const projectsBackend: IProjectBackend[] = [
+export const projectsBackend: IProject[] = [
   {
     id: 'StoreManager',
     mobUrl: undefined,
-    title: 'StoreManager',
+    title: 'Store Manager',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -153,6 +158,7 @@ export const projectsBackend: IProjectBackend[] = [
     id: 'Blogs API',
     mobUrl: undefined,
     title: 'Blogs API',
+    description: '',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -239,7 +245,68 @@ export const projectsBackend: IProjectBackend[] = [
         description: 'Retorna os posts que correspondem ao termo de busca',
         authentication: 'Token de autenticação',
       },
-    ]
+    ],
+  },
+  {
+    id: 'Trybe Smith',
+    mobUrl: undefined,
+    title: 'Trybe Smith',
+    description: '',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/trybesmith-api',
+    endpoints: [
+      {
+        method: 'POST',
+        path: '/products',
+        description: 'Cadastra um novo produto na tabela "products" do banco de dados.'
+      },
+      {
+        method: 'GET',
+        path: '/products',
+        description: 'Lista todos os produtos cadastrados na tabela "products" do banco de dados.'
+      },
+      {
+        method: 'GET',
+        path: '/orders',
+        description: 'Lista todos os pedidos cadastrados na tabela "orders" do banco de dados, incluindo os ids dos produtos associados a cada pedido.'
+      },
+      {
+        method: 'POST',
+        path: '/login',
+        description: 'Realiza o login de um usuário, validando os campos "username" e "password" no banco de dados e retorna um token JWT contendo o id e o username do usuário autenticado.'
+      },
+      {
+        method: 'POST',
+        path: '/orders',
+        description: 'Cadastra um novo pedido na tabela "orders" do banco de dados. Atualiza os produtos relacionados com os ids fornecidos na chave "productIds" com o orderId do pedido.'
+      },
+      {
+        method: 'PUT',
+        path: '/products/:id',
+        description: 'Atualiza um produto existente com base no ID'
+      }
+    ],
+  }
+]
+
+export const projectsFullstack: IProject[] = [
+  {
+    id: 'TFC',
+    mobUrl: '',
+    description: '',
+    title: 'Trybe Futebol Clube',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/tfc-tybe-futebol-clube',
   }
 ]
 
