@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
 import { TitleText, TypingText, ProjectCard, RiskDiv } from '@/components';
-import { projectsFrontend } from '@/constants';
+import { projectsFrontend, projectsBackend } from '@/constants';
 import { staggerContainer } from '@/utils/motion';
 
 const Projects: React.FC = () => {
@@ -20,6 +20,7 @@ const Projects: React.FC = () => {
                 title={project.title}
                 stacks={project.stacks}
                 mobUrl={project.mobUrl}
+                endpoints={project.endpoints}
             />
         ));
 
@@ -60,8 +61,7 @@ const Projects: React.FC = () => {
                         >
                             <Container>
                                 <Row className="justify-content-center flex-wrap">
-                                    {renderProjects([])}
-                                    back-end
+                                    {renderProjects(projectsBackend)}
                                 </Row>
                             </Container>
                         </Tab>
