@@ -9,7 +9,7 @@ import styles from '@/styles';
 import { hardSkills } from '@/constants';
 
 const HardSkills: React.FC = () => (
-    <div className={`${styles.paddings} relative z-10 mb-4 mx-8`} id="skills">
+    <div className={`${styles.paddings} relative z-10 mb-4 mx-8`} id="hardskills">
         <motion.div
             variants={staggerContainer(0.1, 0.2)}
             initial="hidden"
