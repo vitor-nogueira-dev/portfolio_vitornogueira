@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Container, Row, Tab, Tabs } from 'react-bootstrap';
 
 import { TitleText, TypingText, ProjectCard, RiskDiv } from '@/components';
-import { projectsFrontend, projectsBackend } from '@/constants';
+import { projectsFrontend, projectsBackend, projectsFullstack } from '@/constants';
 import { staggerContainer } from '@/utils/motion';
 
 const Projects: React.FC = () => {
@@ -62,6 +62,17 @@ const Projects: React.FC = () => {
                             <Container>
                                 <Row className="justify-content-center flex-wrap">
                                     {renderProjects(projectsBackend)}
+                                </Row>
+                            </Container>
+                        </Tab>
+                        <Tab
+                            eventKey="fullstack"
+                            title={<span className="btn">Full Stack</span>}
+                            className="text-white"
+                        >
+                            <Container>
+                                <Row className="justify-content-center flex-wrap">
+                                    {renderProjects(projectsFullstack)}
                                 </Row>
                             </Container>
                         </Tab>
