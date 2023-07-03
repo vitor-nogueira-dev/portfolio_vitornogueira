@@ -9,7 +9,7 @@ import { IProjectBackend } from "@/interfaces/IProjectBackend";
 export const projectsFrontend: IProjectFrontend[] = [
   {
     id: 'netflix',
-    mobUrl: undefined,
+    mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
     stacks: [
