@@ -7,4 +7,6 @@ export interface IMyVerticallyCenteredModalProps {
     mobUrl: string;
     endpoints?: IEndpointsProps[];
     description: string;
+    repositorio: string;
+    deploy?: string;
 }

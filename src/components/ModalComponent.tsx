@@ -39,14 +39,23 @@ const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='p-3 m-1'>
-                        {/* <h4>Centered Modal</h4> <br /> */}
                         <p>
-                            {props.description} 
+                            {props.description}
                         </p>
                     </Modal.Body>
                     <Row className='justify-content-center gap-3 mb-2  '>
-                        <Col><button className='btn'>Repositório</button></Col>
-                        <Col><button className='btn'>Deploy</button></Col>
+                        <Col>
+                            <a href={props.repositorio} target="_blank">
+                                <button className='btn'>Repositório</button>
+                            </a>
+                        </Col>
+                        {props.deploy && (
+                            <Col>
+                                <a href={props.deploy} target="_blank">
+                                    <button className='btn'>Deploy</button>
+                                </a>
+                            </Col>
+                        )}
                     </Row>
                 </Col>
             </Row>

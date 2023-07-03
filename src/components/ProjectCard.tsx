@@ -1,4 +1,4 @@
-import { Button, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 import { IProjectCardProps } from '@/interfaces/IProjectCardProps';
 
@@ -12,6 +12,8 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
     mobUrl,
     endpoints,
     description,
+    repositorio,
+    deploy,
 }) => {
     const [modalShow, setModalShow] = useState(false);
 
@@ -32,6 +34,8 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
                 mobUrl={mobUrl}
                 endpoints={endpoints}
                 description={description}
+                repositorio={repositorio}
+                deploy={deploy}
             />
             <button className="card-project-button btn z-10" onClick={() => setModalShow(true)}>visualizar projeto</button>
         </Col>
