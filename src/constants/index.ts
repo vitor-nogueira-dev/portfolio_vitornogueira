@@ -552,18 +552,18 @@ export const tabsAbout: ITab[] = [
   {
     eventKey: 'frontend',
     title: 'Front-end',
-    content: `No campo do desenvolvimento front-end, possuo uma ampla gama de conhecimentos e habilidades para criar interfaces de usuário modernas e responsivas. Sou especializado em tecnologias como ReactJS, TypeScript e JavaScript, que são a base do desenvolvimento front-end atual.\n\n
+    content: `No campo do desenvolvimento front-end, possuo uma ampla gama de conhecimentos e habilidades para criar interfaces de usuário modernas e responsivas. Sou especializado em tecnologias como ReactJS, NextJS, TypeScript e JavaScript, que são a base do desenvolvimento front-end atual.\n\n
 
     Tenho experiência no uso de bibliotecas e frameworks populares, como Redux, para gerenciamento de estado eficiente e escalável. Também estou familiarizado com ferramentas de teste, como Jest e React Testing Library, para garantir a qualidade do código por meio de testes automatizados abrangentes, tanto em nível unitário quanto de integração.\n\n
     
-    Além disso, possuo habilidades sólidas em estilização de componentes, utilizando frameworks como Tailwind CSS, Material UI, Bootstrap e Styled Components. Tenho domínio de HTML e CSS, permitindo-me criar interfaces bem estruturadas e visualmente atraentes.\n\n
+    Além disso, possuo habilidades sólidas em estilização de componentes, utilizando frameworks como Tailwind CSS, Material UI, React Suite, Framer Motion, Bootstrap, React Bootstrap e Styled Components. Tenho domínio de HTML e CSS, permitindo-me criar interfaces bem estruturadas e visualmente atraentes.\n\n
     
     Minha experiência em desenvolvimento front-end abrange desde a criação de interfaces de usuário dinâmicas até a implementação de práticas modernas de desenvolvimento, como componentização, padrões de design e arquitetura escalável.`,
   },
   {
     eventKey: 'backend',
     title: 'Back-end',
-    content: `No campo do desenvolvimento back-end, possuo ampla experiência em tecnologias como Node.js, Express e Docker, que utilizo para criar APIs RESTful robustas. Tenho sólidos conhecimentos em API RESTful e sou habilidoso na criação de endpoints eficientes e seguros. Além disso, trabalhei com bancos de dados SQL, como MySQL, e estou familiarizado com o uso do Sequelize como ORM para interagir com eles.\n\n
+    content: `No campo do desenvolvimento back-end, possuo ampla experiência em tecnologias como Node.js, Typescript, Express e Docker, que utilizo para criar APIs RESTful robustas. Tenho sólidos conhecimentos em API RESTful e sou habilidoso na criação de endpoints eficientes e seguros. Além disso, trabalhei com bancos de dados SQL, como MySQL, e estou familiarizado com o uso do Sequelize como ORM para interagir com eles.\n\n
 
     Também tenho experiência em testes automatizados no back-end, utilizando ferramentas como Mocha, Chai e Sinon. Sou proficiente em testes unitários e de integração, o que me permite garantir a qualidade e a robustez do código. Além disso, possuo conhecimentos em práticas de programação orientada a objetos (POO) e utilizo o Docker para criar ambientes eficientes de desenvolvimento e produção.`,
   },
