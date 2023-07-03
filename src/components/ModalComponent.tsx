@@ -9,7 +9,6 @@ import Modal from 'react-bootstrap/Modal';
 import TableEndpoints from './TableEndpoints';
 
 const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
-    console.log(props, 'props')
     return (
         <Modal
             {...props}
