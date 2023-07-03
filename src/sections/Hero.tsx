@@ -11,8 +11,8 @@ import TypingEffect from '@/components/Typical';
 import { ButtonComponent, RiskDiv } from '@/components';
 
 const Hero: React.FC = () => (
-    <section className={` mt-16 flex items-center justify-center flex-col `} id="inicio">
-        <div className=" flex w-full justify-center flex-wrap items-center py-2 lg:gap-2 first-letter:gap-6">
+    <section className={` mt-24 flex items-center justify-center flex-col `} id="inicio">
+        <div className=" flex w-full justify-center flex-wrap items-center py-2 lg:gap-6  first-letter:gap-6 ">
             <div className="pt-1 flex lg:items-start md:items-start items-center flex-col rounded-tl-[20px] z-10 rounded-bl-[20px] gap-2">
                 <motion.h1 variants={textVariant(1.1)} className={'font-bold  text-[40px] leading-[50px] text-[#ffffff]'}>
                     Olá, eu sou o <br />
