@@ -1,0 +1,9 @@
+.table-custom {
+  font-size: 14px;
+}
+
+.table-custom th,
+.table-custom td {
+  vertical-align: middle;
+  padding: 0.5rem;
+}
