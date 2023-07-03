@@ -6,8 +6,10 @@ import { IMyVerticallyCenteredModalProps } from '@/interfaces/IMyVerticallyCente
 import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import TableEndpoints from './TableEndpoints';
 
 const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
+    console.log(props, 'props')
     return (
         <Modal
             {...props}
@@ -17,13 +19,19 @@ const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
             className='glassmorphism custom-modal'
         >
             <Row className='justify-content-center'>
-                <Col className='d-flex align-items-center justify-content-center lg:mb-3 ' md="auto" lg={4}>
-                    <Image
-                        src={props.mobUrl}
-                        alt="Photo project in mobile"
-                        width={200}
-                        height={100}
-                    />
+                <Col className='d-flex align-items-center justify-content-center lg:mb-3 ' md="auto" lg={12}>
+                    {props.mobUrl !== undefined ? (
+                        <Image
+                            src={props.mobUrl}
+                            alt="Photo project in mobile"
+                            width={200}
+                            height={100}
+                        />
+                    ) : (
+                        <TableEndpoints
+                            endpoints={props.endpoints}
+                        />
+                    )}
                 </Col>
                 <Col className='d-flex align-items-center flex-column justify-content-center p-4' md="auto" lg={8}>
                     <Modal.Header closeButton>
