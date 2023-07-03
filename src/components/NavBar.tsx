@@ -8,8 +8,8 @@ const navigation = [
     { name: 'Inicio', href: '#inicio', current: true },
     { name: 'Sobre', href: '#sobre', current: false },
     { name: 'Projetos', href: '#projetos', current: false },
-    { name: 'Hard Skills', href: '#hardskills', current: false },
-    { name: 'Soft Skills', href: '#softskills', current: false },
+    { name: 'H Skills', href: '#hardskills', current: false },
+    { name: 'S Skills', href: '#softskills', current: false },
     { name: 'Contato', href: '#contato', current: false },
 ];
 
@@ -62,10 +62,10 @@ const Navbar: React.FC = () => {
                                         )}
                                     </Disclosure.Button>
                                 </div>
-                                <div className="flex flex-1 sm:items-stretch sm:justify-between justify-center lg:justify-between md:justify-between lg:items-center md:items-center">
+                                <div className="flex flex-1 sm:items-stretch sm:justify-between justify-center lg:justify-between md:justify-center lg:items-center md:items-center">
                                     <div className="flex flex-shrink-0 items-center">
                                         <Image
-                                            className="block h-16 w-auto lg:hidden"
+                                            className="block sm:hidden md:hidden h-16 w-auto lg:hidden"
                                             src="/vn1.png"
                                             alt="Your Company"
                                             width={200}
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <Disclosure.Panel className="sm:hidden">
+                        <Disclosure.Panel className="sm:hidden md:hidden">
                             <div className="space-y-1 px-2 pb-3 pt-2 flex flex-col items-center">
                                 {navigation.map((item) => (
                                     <Disclosure.Button
