@@ -81,6 +81,21 @@ export const projectsFrontend: IProject[] = [
     repositorio: 'https://github.com/vitor-nogueira-dev/trybe-tunes',
     deploy: 'https://trybetunes-vn.netlify.app/',
   },
+  {
+    id: 'MeuTime',
+    mobUrl: '/mobMeuTime.png',
+    deskUrl: '',
+    title: 'Meu Time',
+    description: 'Foi desenvolvido uma aplicação que permite visualizar informações detalhadas de um time de futebol e seus jogadores com base no país, liga, copa e temporada selecionados.',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      '/styled-components.png',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg'
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/meu-time',
+    deploy: 'https://meutime-vn.netlify.app/',
+  },
 ];
 
 export const projectsBackend: IProject[] = [
