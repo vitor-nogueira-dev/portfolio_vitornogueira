@@ -10,6 +10,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
     title,
     stacks,
     mobUrl,
+    endpoints,
 }) => {
     const [modalShow, setModalShow] = useState(false);
 
@@ -28,6 +29,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
                 onHide={() => setModalShow(false)}
                 title={title}
                 mobUrl={mobUrl}
+                endpoints={endpoints}
             />
             <button className="card-project-button btn z-10" onClick={() => setModalShow(true)}>visualizar projeto</button>
         </Col>
