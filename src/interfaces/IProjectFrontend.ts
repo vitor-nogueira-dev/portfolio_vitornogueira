@@ -1,7 +1,7 @@
-export interface IProject {
+export interface IProjectFrontend {
     id: string;
     deskUrl: string;
-    mobUrl: string;
+    mobUrl: string | undefined;
     title: string;
     stacks: string[];
     repositorio: string;
