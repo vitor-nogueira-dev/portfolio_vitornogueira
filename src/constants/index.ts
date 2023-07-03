@@ -88,7 +88,7 @@ export const projectsBackend: IProject[] = [
     id: 'StoreManager',
     mobUrl: undefined,
     title: 'Store Manager',
-    description: '',
+    description: 'Foi desenvolvido uma API de um sistema de gerenciamento de vendas no formato dropshipping em que é possível criar, visualizar, deletar e atualizar produtos e vendas.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -158,7 +158,7 @@ export const projectsBackend: IProject[] = [
     id: 'Blogs API',
     mobUrl: undefined,
     title: 'Blogs API',
-    description: '',
+    description: 'Foi desenvolvido uma API e um banco de dados para a produção de conteúdo em um blog',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -251,7 +251,7 @@ export const projectsBackend: IProject[] = [
     id: 'Trybe Smith',
     mobUrl: undefined,
     title: 'Trybe Smith',
-    description: '',
+    description: 'Foi desenvolvido uma API de uma loja de itens medievais utilizando Typescript e Sequelize. A aplicação foi organizada em camadas, incluindo os serviços (Services) e controladores (Controllers) para tratar as operações de criação, leitura e atualização de informações.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
@@ -298,7 +298,7 @@ export const projectsFullstack: IProject[] = [
   {
     id: 'TFC',
     mobUrl: '',
-    description: '',
+    description: 'O TFC é um site informativo sobre partidas e classificações de futebol, onde você pode encontrar todas as informações relevantes sobre jogos de futebol.',
     title: 'Trybe Futebol Clube',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',

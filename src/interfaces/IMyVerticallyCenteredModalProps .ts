@@ -5,5 +5,6 @@ export interface IMyVerticallyCenteredModalProps {
     onHide: () => void;
     title?: string;
     mobUrl: string;
-    endpoints?: IEndpointsProps[]
+    endpoints?: IEndpointsProps[];
+    description: string;
 }

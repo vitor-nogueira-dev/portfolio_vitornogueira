@@ -39,11 +39,9 @@ const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className='p-3 m-1'>
-                        <h4>Centered Modal</h4>
+                        {/* <h4>Centered Modal</h4> <br /> */}
                         <p>
-                            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                            consectetur ac, vestibulum at eros.
+                            {props.description} 
                         </p>
                     </Modal.Body>
                     <Row className='justify-content-center gap-3 mb-2  '>

@@ -21,6 +21,7 @@ const Projects: React.FC = () => {
                 stacks={project.stacks}
                 mobUrl={project.mobUrl}
                 endpoints={project.endpoints}
+                description={project.description}
             />
         ));
 

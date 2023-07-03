@@ -4,5 +4,6 @@ export interface IProjectCardProps {
     title: string;
     stacks?: string[];
     mobUrl: string;
-    endpoints?: IEndpointsProps[]
+    endpoints?: IEndpointsProps[];
+    description: string;
 }
