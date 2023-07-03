@@ -1,14 +1,15 @@
 import { ITab } from "@/interfaces/ITab";
 import { IHardSkillsCardProps } from "@/interfaces/IHardSkillsCardProps";
-import { IProject } from "@/interfaces/IProject";
+import { IProjectFrontend } from "@/interfaces/IProjectFrontend";
 import { IRedesSociais } from "@/interfaces/IRedesSoiais";
 import { ISoftSkill } from "@/interfaces/ISoftSkill";
 import { IWorkExperience } from "@/interfaces/IWorkExperience";
+import { IProjectBackend } from "@/interfaces/IProjectBackend";
 
-export const projectsFrontend: IProject[] = [
+export const projectsFrontend: IProjectFrontend[] = [
   {
     id: 'netflix',
-    mobUrl: '/mobNetflix.png',
+    mobUrl: undefined,
     deskUrl: '/deskNetflix.png',
     title: 'Netflix',
     stacks: [
@@ -78,6 +79,169 @@ export const projectsFrontend: IProject[] = [
   },
 ];
 
+export const projectsBackend: IProjectBackend[] = [
+  {
+    id: 'StoreManager',
+    mobUrl: undefined,
+    title: 'StoreManager',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg',
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/store-manager',
+    endpoints: [
+      {
+        method: 'GET',
+        path: '/products',
+        description: 'Retorna todos os produtos cadastrados',
+      },
+      {
+        method: 'GET',
+        path: '/products/:id',
+        description: 'Retorna um produto específico com base no ID',
+      },
+      {
+        method: 'GET',
+        path: '/products/search?q=searchTerm',
+        description: 'Pesquisa produtos com base em um termo de pesquisa',
+      },
+      {
+        method: 'POST',
+        path: '/products',
+        description: 'Cadastra um novo produto e valida os dados',
+      },
+      {
+        method: 'PUT',
+        path: '/products/:id',
+        description: 'Atualiza um produto existente com base no ID',
+      },
+      {
+        method: 'DELETE',
+        path: '/products/:id',
+        description: 'Deleta um produto existente com base no ID',
+      },
+      {
+        method: 'GET',
+        path: '/sales',
+        description: 'Retorna todas as vendas',
+      },
+      {
+        method: 'GET',
+        path: '/sales/:id',
+        description: 'Retorna uma venda específica com base no ID',
+      },
+      {
+        method: 'POST',
+        path: '/sales',
+        description: 'Valida e cadastra uma nova venda',
+      },
+      {
+        method: 'PUT',
+        path: '/sales/:id',
+        description: 'Atualiza uma venda existente com base no ID',
+      },
+      {
+        method: 'DELETE',
+        path: '/sales/:id',
+        description: 'Deleta uma venda existente com base no ID',
+      }
+    ]
+  },
+  {
+    id: 'Blogs API',
+    mobUrl: undefined,
+    title: 'Blogs API',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg'
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/blogs-api',
+    endpoints: [
+      {
+        method: 'POST',
+        path: '/login',
+        description: 'Realiza o login do usuário',
+        authentication: 'N/A',
+      },
+      {
+        method: 'POST',
+        path: '/user',
+        description: 'Adiciona um novo usuário',
+        authentication: 'N/A',
+      },
+      {
+        method: 'GET',
+        path: '/user',
+        description: 'Retorna todos os usuários',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'GET',
+        path: '/user/:id',
+        description: 'Retorna um usuário específico',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'POST',
+        path: '/categories',
+        description: 'Adiciona uma nova categoria',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'GET',
+        path: '/categories',
+        description: 'Retorna todas as categorias',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'POST',
+        path: '/post',
+        description: 'Adiciona um novo post e vincula às categorias',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'GET',
+        path: '/post',
+        description: 'Retorna todos os posts',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'GET',
+        path: '/post/:id',
+        description: 'Retorna um post específico',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'PUT',
+        path: '/post/:id',
+        description: 'Atualiza um post existente',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'DELETE',
+        path: '/post/:id',
+        description: 'Deleta um post existente',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'DELETE',
+        path: '/user/me',
+        description: 'Deleta o usuário logado',
+        authentication: 'Token de autenticação',
+      },
+      {
+        method: 'GET',
+        path: '/post/search?q=term',
+        description: 'Retorna os posts que correspondem ao termo de busca',
+        authentication: 'Token de autenticação',
+      },
+    ]
+  }
+]
 
 export const softSkills: ISoftSkill[] = [
   {
