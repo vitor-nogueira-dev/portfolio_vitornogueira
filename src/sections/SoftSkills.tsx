@@ -11,7 +11,7 @@ import { softSkills } from '@/constants';
 import { SoftSkillsCard } from '@/components';
 
 const SoftSkills: React.FC = () => (
-    <section className={`${styles.paddings} max-w-[1200px] marker:relative z-10 m-auto`}>
+    <section className={`${styles.paddings} max-w-[1200px] marker:relative z-10 m-auto`} id="softskills">
         <motion.div
             variants={staggerContainer(0.2, 0.1)}
             initial="hidden"
@@ -26,7 +26,7 @@ const SoftSkills: React.FC = () => (
             >
                 <TypingText title="| Softskills" />
                 <TitleText title="Construindo com Empatia e Colaboração: Minhas Habilidades Além do Código" />
-                <div className="mt-[48px] flex flex-wrap justify-center gap-[24px] max-w-[900px]">
+                <div className="mt-[48px] flex flex-wrap justify-center gap-[24px] max-w-[900px] ">
                     {softSkills.map((softSkill) => (
                         <SoftSkillsCard
                             key={softSkill.title}
