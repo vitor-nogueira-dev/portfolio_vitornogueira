@@ -8,7 +8,8 @@ const navigation = [
     { name: 'Inicio', href: '#inicio', current: true },
     { name: 'Sobre', href: '#sobre', current: false },
     { name: 'Projetos', href: '#projetos', current: false },
-    { name: 'Skills', href: '#skills', current: false },
+    { name: 'Hard Skills', href: '#hardskills', current: false },
+    { name: 'Soft Skills', href: '#softskills', current: false },
     { name: 'Contato', href: '#contato', current: false },
 ];
 
