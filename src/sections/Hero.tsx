@@ -19,11 +19,11 @@ const Hero: React.FC = () => (
                     <span>Vitor Nogueira!!</span> <br />
                     <span className='text-[16px] text-[#ffffff]'>
                         Desenvolvedor, <br />
-                        <TypingEffect text="Full Stack com ênfase em Front-end" time={5000} />
+                        <TypingEffect text="Full Stack com foco em Front-end" time={5000} />
                     </span>
                 </motion.h1>
                 <div className="flex gap-2 ">
-                    <ButtonComponent content="dowload cv" />
+                    {/* <ButtonComponent content="dowload cv" /> */}
                     <ButtonComponent content="contato" />
                 </div>
             </div>
