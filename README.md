@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portfólio Vitor Nogueira 💻
 
-## Getting Started
+### Olá! 👋
+Sou um desenvolvedor FullStack com foco em Frontend e este é o meu potfólio, onde você pode ver alguns dos meus projetos, conhecer um pouco mais sobre mim e entrar em contato comigo.
 
-First, run the development server:
+<details>
+<summary>Tecnologias utilizadas ⚙️</summary>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![ReactJS](https://img.shields.io/badge/-ReactJS-333333?style=flat&logo=react) </br>
+![NextJS](https://img.shields.io/badge/-NextJS-333333?style=flat&logo=next.js) </br>
+![TypeScript](https://img.shields.io/badge/-TypeScript-333333?style=flat&logo=typescript) </br>
+![StyledComponents](https://img.shields.io/badge/-StyledComponents-333333?style=flat&logo=styled-components) </br>
+![Motion](https://img.shields.io/badge/-FramerMotion-333333?style=flat&logo=framer) </br>
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-333333?style=flat&logo=tailwind-css) </br>
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap) </br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</details>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Entre em contato comigo: 
+📧 - vleonel96@gmail.com </br>
+🌐 - [vitor-nogueira-dev](https://portfolio-vn.vercel.app/) </br>
