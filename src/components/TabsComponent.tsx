@@ -20,7 +20,7 @@ const TabsComponent: React.FC = () => {
                     key={index}
                     eventKey={tab.eventKey}
                     title={<span className="btn">{tab.title}</span>}
-                    className=' text-white p-6'
+                    className=' text-white p-6 max-w-[1000px]'
                 >
                     {tab.content.split('\n\n').map((paragrafo, index) => (
                         <motion.p variants={textVariant2} key={index} className="pl-4 border-l-2 border-gray-300 text-lg font-medium text-slate-200">{paragrafo}
