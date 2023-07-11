@@ -10,8 +10,8 @@ export const projectsFrontend: IProject[] = [
     id: 'netflix',
     mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
-    title: 'Netflix',
-    description: '',
+    title: 'Clone Netflix',
+    description: 'Clone da plataforma de streaming Netflix, desenvolvido utilizando React e Material UI.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -26,7 +26,7 @@ export const projectsFrontend: IProject[] = [
     mobUrl: '/mobFitClub.png',
     deskUrl: '/deskFitClub.png',
     title: 'FitClub',
-    description: '',
+    description: 'Este projeto consiste na criação de um site responsivo para uma academia. Foi desenvolvido utilizando as tecnologias React, CSS moderno e JavaScript. Para melhorar a funcionalidade e praticidade do site, foi incorporada a biblioteca E-mail.js, permitindo que os usuários insiram seus endereços de e-mail para contato, e essas informações sejam enviadas para a caixa de entrada do responsável pelo site. Além disso, foram utilizadas outras bibliotecas do React, como React Framer Motion e React Scroll, para adicionar animações e efeitos de rolagem ao site. O resultado é um site moderno, interativo e otimizado para dispositivos móveis, proporcionando uma experiência agradável aos usuários.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
@@ -41,7 +41,7 @@ export const projectsFrontend: IProject[] = [
     mobUrl: '/mobWeekAway.png',
     deskUrl: '/deskWeekAway.png',
     title: 'WeekAway',
-    description: '',
+    description: 'Neste projeto, foi desenvolvido um site responsivo utilizando o framework de estilização Tailwind CSS. A aplicação foi construída inteiramente em React e todo o design e layout foram implementados utilizando as classes e componentes fornecidos pelo Tailwind CSS. Além disso, a biblioteca React Icons foi utilizada para adicionar ícones ao site, oferecendo uma variedade de opções e estilos para aprimorar a experiência do usuário. O resultado é um site moderno, com um visual atraente e responsivo, garantindo uma experiência agradável em dispositivos de diferentes tamanhos e formatos.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
@@ -56,7 +56,7 @@ export const projectsFrontend: IProject[] = [
     mobUrl: '/mobWallet.png',
     deskUrl: '/deskWallet.png',
     title: 'Wallet',
-    description: '',
+    description: 'O objetivo deste projeto foi desenvolver uma carteira de controle de gastos com um conversor de moedas integrado. A aplicação permite que os usuários adicionem, removam e editem seus gastos, além de visualizar uma tabela com todas as despesas registradas. O diferencial está na funcionalidade de conversão de moedas, onde o usuário pode selecionar a moeda desejada e ver o total de gastos convertido para essa moeda específica. Isso proporciona uma visão mais abrangente dos gastos e ajuda a ter um controle financeiro mais preciso. Com essa carteira de controle de gastos intuitiva e o recurso de conversor de moedas, os usuários podem tomar decisões financeiras mais informadas e eficientes.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
@@ -71,7 +71,7 @@ export const projectsFrontend: IProject[] = [
     mobUrl: '/mobTunes.png',
     deskUrl: '/deskTunes.png',
     title: 'Tunes',
-    description: '',
+    description: 'Foi desenvolvido um aplicativo de músicas que utiliza a API do iTunes para buscar artistas e álbuns, reproduzir músicas, favoritar faixas e criar perfis personalizados. Os usuários poderão buscar e ouvir suas músicas favoritas, salvar suas escolhas no armazenamento local e criar e editar seus perfis com informações como nome, e-mail, foto de perfil e descrição.',
     stacks: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
@@ -578,7 +578,9 @@ export const tabsAbout: ITab[] = [
   {
     eventKey: 'backend',
     title: 'Back-end',
-    content: `No campo do desenvolvimento back-end, possuo ampla experiência em tecnologias como Node.js, Typescript, Express e Docker, que utilizo para criar APIs RESTful robustas. Tenho sólidos conhecimentos em API RESTful e sou habilidoso na criação de endpoints eficientes e seguros. Além disso, trabalhei com bancos de dados SQL, como MySQL, e estou familiarizado com o uso do Sequelize como ORM para interagir com eles.\n\n
+    content: `No campo do desenvolvimento back-end, possuo uma vasta experiência em tecnologias como Node.js, Typescript, Express e Docker. Utilizo essas tecnologias para criar APIs RESTful robustas, com sólidos conhecimentos na criação de endpoints eficientes e seguros. Além disso, possuo ampla experiência em bancos de dados SQL, como MySQL, Supabase e Firebase, e estou familiarizado com o uso do Sequelize como ORM para interagir com eles.\n\n
+
+    Minha experiência em desenvolvimento back-end também inclui a implementação de autenticação e autorização em APIs, usando ferramentas como JWT (JSON Web Tokens). Tenho habilidades em lidar com requisições e respostas HTTP, manipulação de erros e validação de dados para garantir a integridade e segurança das informações transmitidas.\n\n
 
     Também tenho experiência em testes automatizados no back-end, utilizando ferramentas como Mocha, Chai e Sinon. Sou proficiente em testes unitários e de integração, o que me permite garantir a qualidade e a robustez do código. Além disso, possuo conhecimentos em práticas de programação orientada a objetos (POO) e utilizo o Docker para criar ambientes eficientes de desenvolvimento e produção.`,
   },
