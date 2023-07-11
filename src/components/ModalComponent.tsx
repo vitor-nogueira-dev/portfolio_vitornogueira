@@ -23,7 +23,7 @@ const ModalComponent: React.FC<IMyVerticallyCenteredModalProps> = (props) => {
                         <Image
                             src={props.mobUrl}
                             alt="Photo project in mobile"
-                            width={200}
+                            width={props.title === 'Trybe Futebol Clube' ? 700 : 200}
                             height={100}
                         />
                     ) : (

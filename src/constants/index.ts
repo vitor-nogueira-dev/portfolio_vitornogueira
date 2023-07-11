@@ -312,7 +312,7 @@ export const projectsBackend: IProject[] = [
 export const projectsFullstack: IProject[] = [
   {
     id: 'TFC',
-    mobUrl: '',
+    mobUrl: '/deskTFC.png',
     description: 'O TFC é um site informativo sobre partidas e classificações de futebol, onde você pode encontrar todas as informações relevantes sobre jogos de futebol.',
     title: 'Trybe Futebol Clube',
     stacks: [
