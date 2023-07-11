@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
                             title={<span className="btn">Front-end</span>}
                             className="text-white"
                         >
-                            <Container>
+                            <Container className='max-w-[1000px]'>
                                 <Row className="justify-content-center flex-wrap">
                                     {renderProjects(projectsFrontend)}
                                 </Row>
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
                             title={<span className="btn">Back-end</span>}
                             className="text-white"
                         >
-                            <Container>
+                            <Container className='max-w-[1000px]'>
                                 <Row className="justify-content-center flex-wrap">
                                     {renderProjects(projectsBackend)}
                                 </Row>
@@ -73,7 +73,7 @@ const Projects: React.FC = () => {
                             title={<span className="btn">Full Stack</span>}
                             className="text-white"
                         >
-                            <Container>
+                            <Container className='max-w-[1000px]'>
                                 <Row className="justify-content-center flex-wrap">
                                     {renderProjects(projectsFullstack)}
                                 </Row>
