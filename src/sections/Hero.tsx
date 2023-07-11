@@ -23,7 +23,9 @@ const Hero: React.FC = () => (
                     </span>
                 </motion.h1>
                 <div className="flex gap-2 ">
-                    {/* <ButtonComponent content="dowload cv" /> */}
+                    <a href="/curriculo.pdf" download>
+                        <ButtonComponent content="dowload cv" />
+                    </a>
                     <ButtonComponent content="contato" />
                 </div>
             </div>
