@@ -3,8 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import styles from '@/styles';
-
 import { fadeIn, textVariant } from '@/utils/motion';
 import TypingEffect from '@/components/Typical';
 
@@ -36,7 +34,6 @@ const Hero: React.FC = () => (
                 width={500}
                 height={500}
             />
-
         </div>
         <motion.img
             variants={fadeIn('up', 'tween', 0.3, 1)}
