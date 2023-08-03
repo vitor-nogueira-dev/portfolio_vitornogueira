@@ -96,6 +96,21 @@ export const projectsFrontend: IProject[] = [
     repositorio: 'https://github.com/vitor-nogueira-dev/meu-time',
     deploy: 'https://meutime-vn.netlify.app/',
   },
+  {
+    id: 'Blog List',
+    mobUrl: '/mobBlogList.png',
+    deskUrl: '',
+    title: 'Blog List',
+    description: 'Foi desenvolvido um crud de postagens de blog. Onde você pode criar, ler, atualizar e excluir postagens.',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+      '/cypress-logo.png'
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/crud-bloglist-redux',
+    deploy: 'https://bloglist-vn.vercel.app/',
+  },
 ];
 
 export const projectsBackend: IProject[] = [
