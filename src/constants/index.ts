@@ -7,6 +7,36 @@ import { IProject } from "@/interfaces/IProject";
 
 export const projectsFrontend: IProject[] = [
   {
+    id: 'code-mark',
+    mobUrl: '/tabCodeMark.png',
+    deskUrl: '/tabCodeMark.png',
+    title: 'Code Mark',
+    description: 'O Code Mark é um gerador de Readme Drag in Drop. Com interface intuita e fácil de usar, o usuário pode criar um Readme para seus projetos de forma rápida e prática. O Code Mark foi desenvolvido utilizando React, Typescript, Tailwind CSS e React DnD.',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev',
+    deploy: 'https://code-mark.vercel.app/',
+  },
+  {
+    id: 'code-mark',
+    mobUrl: '/mobrtk.png',
+    deskUrl: '/mobrtk.png',
+    title: 'Rtk Translate',
+    description: 'RTK - Translate é uma biblioteca criada para simplificar a tradução de seu site, portfólio, software e muito mais. Projetada para ser simples, intuitiva e prática. Integre-a facilmente em seus projetos e suporte quantos idiomas desejar.',
+    stacks: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    ],
+    repositorio: 'https://github.com/vitor-nogueira-dev/rtk-translate',
+    deploy: 'https://rtk-translate-demo.vercel.app/',
+  },
+  {
     id: 'netflix',
     mobUrl: '/mobNetflix.png',
     deskUrl: '/deskNetflix.png',
