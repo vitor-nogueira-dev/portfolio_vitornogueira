@@ -24,7 +24,9 @@ const Hero: React.FC = () => (
                     <a href="/curriculo.pdf" download>
                         <ButtonComponent content="dowload cv" />
                     </a>
-                    <ButtonComponent content="contato" />
+                    <a href="#contato">
+                        <ButtonComponent content="contato" />
+                    </a>
                 </div>
             </div>
             <Image
